@@ -1,0 +1,1651 @@
+@-moz-document domain(pixiv.net) {
+/* GENERAL */
+    a,
+    .button,
+    br,
+    div,
+    dt,
+    input,
+    li,
+    span,
+    textarea,
+    td,
+    tr{
+        font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+    }
+    body {
+        background: #f2f4f6 !important;
+        overflow-x: hidden;
+    }
+    ._unit {
+        border-color: #EBEBEB !important;
+        border-radius: 1px !important;
+    }
+    ._work::before {
+        display: none !important;
+    }
+    ._work.multiple ._layout-thumbnail {
+        border: 3px solid #EB6361 !important;
+    }
+    /** HEADER **/
+        body > .header {
+            background: #FFF !important;
+            border-bottom: 1px solid #EBEBEB;
+            padding: 20px;
+            z-index: 9999 !important;
+        }
+        .header .ui-search .container {
+            padding: 5px 5px 5px 10px !important;
+        }
+        .header .ui-search .container input {
+            width: 163px;
+            background: transparent !important;
+            font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+        }
+        .header .ui-search input.submit {
+            width: 32px;
+            height: 32px;
+            padding: 5px !important;
+        }
+        .header .sprites-search-old {
+            background-image: url("http://www.iconsdb.com/icons/preview/white/search-12-xxl.png") !important;
+            background-repeat: no-repeat !important;
+            background-size: 15px auto !important;
+            background-position: center center !important;
+        }
+    /** FOOTER **/
+        .footer {
+            border-radius: 1px;
+            border-color: #EBEBEB !important;
+            margin-right: -21px !important;
+            margin-top: -6px !important;
+        }
+    /** OTHERS **/
+        ._shortcut-help,
+        ._booth-promotion-container,
+        .pixiv-id-badge,
+        img[src*="circle"],
+        .upload.ad-printservice,
+        .more,
+        #setting-notification .supplementary {
+            display: none !important;
+        }
+}
+
+@-moz-document url("http://www.pixiv.net/"),
+url("http://www.pixiv.net/cate_r18.php"),
+url("http://www.pixiv.net/novel/"),
+regexp("http://www.pixiv.net/group/?.*id=.*") {
+/* HOME/GROUP/NOVEL PAGE */
+    /** LAYOUT **/
+        #page-mypage,
+        #page-mypage-r18 {
+            margin-top: 60px !important;
+        }
+    /** LEFT BOXES **/
+        ._unit.my-profile-unit .badges,
+        ._unit.menu-unit._ui-layout-west-history,
+        .area_new,
+        .list-unit .related {
+            display: none !important;
+        }     
+        /*** MYPROFILE BOX ***/
+            ._unit.my-profile-unit {
+                border-radius: 1px !important;
+                background: #FFF !important;
+                border: 1px solid #EBEBEB !important;
+            }
+            .my-profile-unit {
+                padding: 10px !important;
+            }
+            .my-profile-unit .user-link {
+                border: none !important;
+            }
+            .my-profile-unit .user {
+                font-size: 15pt !important;
+                margin-left: 5px !important;
+            }
+            .my-profile-unit .more {
+                display: none !important;
+            }
+        /*** FOLLOWING/SUGGESTED/GROUPS/COMIC BOXES ***/
+            ._unit.list-unit.following-unit, 
+            #user-recommend-container,
+            .side-menu.group-list,
+            .side-menu.comic-container {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                padding: 11px 11px 15px 11px !important;
+            }
+            .list-unit .more {
+                display: none !important;
+            }
+            ._unit.list-unit.following-unit .unit-title,
+            #user-recommend-container .unit-title,
+            .side-menu.group-list h1,
+            .side-menu.comic-container h1 {
+                background: transparent !important;
+                font-weight: 900 !important;
+                text-transform: uppercase !important;
+                margin-top: -3px !important;
+            } 
+            ._unit.list-unit.following-unit .unit-count {
+                color: #212121 !important;
+                font-weight: bold !important;
+                font-family: "Roboto" !important;
+                right: 16px !important;
+                top: 8px !important;
+            }
+            .side-menu.comic-container .hot-works a,
+            .area_inside {
+                border: none !important;
+            }
+    /** CENTER BOXES **/
+        .contents-east {
+            margin-left: 20px !important;
+        }
+        /*** NEWS BOX ***/
+            .rounded {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                padding: 20px !important;
+            }
+            .NewsTop h1 {
+                display: none !important;
+            }
+            .NewsTop .category {
+                border-radius: 1px !important;
+                font-size: 9pt !important;
+                padding: 5px 9px !important;
+                width: 90px !important;
+                margin-right: 5px !important;
+            }
+            .NewsTop li {
+                line-height: 20px;
+                margin-bottom: 10px !important;
+                max-width: 510px !important;
+            }
+
+       /*** ART BOX ***/
+            #item-container {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                padding: 14px 20px !important;
+            }
+            #item-container .item header h1 {
+                border: 1px solid #EBEBEB !important;
+                padding: 10px 18px !important;
+            }
+            #item-container .item header .actions {
+                position: absolute;
+                top: 18px;
+                right: 17px;
+            }
+            #item-container ._image-items {
+                padding: 10px !important;
+                margin-left: 60px !important;
+                margin-top: 40px !important;
+            }
+            ._mypage-fanbox,
+            #item-container .item .content ul.more {
+                display: none !important;
+            }
+        /*** GROUP BOX ***/
+            #page-group {
+                margin-top: 60px !important;
+            }
+            #page-group #contents {
+                width: 782px;
+                margin-left: 22px !important;
+                border-radius: 1px !important;
+                border-color: #EBEBEB !important;
+            }
+            #page-group header div.cover.has-cover {
+                border-radius: 1px !important;
+            }
+    /** RIGHT BOXES **/
+        div#column-misc section.item ul.ranking-links,
+        .item.daily,
+        .item.male,
+        .item.rookie,
+         .item.other-ranking {
+            display: none !important;
+        }
+        /*** RANK BOX ***/
+            div#column-misc section.item {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                padding: 11px !important;
+                margin-top: 0px !important;
+            }
+            .item.abroad h1 {
+                background-color: #F4D6A0 !important;
+                border: 1px solid #F0B799 !important;
+                border-radius: 1px !important;
+                font-size: 10.5pt !important;
+                padding: 10px 14px !important;
+            }
+            .item.original h1 {
+                background-color: #EEE657 !important;
+                border: 1px solid #EDD834 !important;
+                border-radius: 1px !important;
+                font-size: 10.5pt !important;
+                padding: 10px 14px !important;
+            }
+            div#column-misc section.item h1 {
+                border: 1px solid #EBEBEB;
+                border-radius: 1px !important;
+                font-size: 10.5pt !important;
+                padding: 10px 14px !important;        
+            }
+            div#column-misc section.item ol.ranking > li {
+                background: transparent !important;
+                margin-top: 20px !important;
+                margin-left: -9px !important;
+            }
+            div#column-misc section.item ol.ranking > li.rank-detail div.rank {
+                display: none !important;
+            }
+    div#column-misc section.item {
+    }
+}      
+
+@-moz-document regexp("http://www.pixiv.net/setting_user.php.*"),
+regexp("http://www.pixiv.net/setting_profile.php.*"),
+regexp("http://www.pixiv.net/setting_info.php.*"),
+regexp("http://www.pixiv.net/stacc/my/setting.*"),
+regexp("http://www.pixiv.net/setting_blogparts.php.*"),
+regexp("http://www.pixiv.net/setting_profile_img.php.*"),
+regexp("http://www.pixiv.net/setting_workspace.php.*"),
+regexp("http://www.pixiv.net/setting_design.php.*") { 
+/* SETTING PAGES */
+    /** LAYOUT **/
+        .one_column {
+            margin-top: 60px !important;
+            padding-bottom: 10px !important;
+        }
+        .one_column_top,
+        .one_column_body,
+        .onecolumnBottom {
+            border-color: #EBEBEB !important;
+            border-radius: 1px !important;
+        }
+    /** HEADER **/
+        .one_column_top h2 {
+            display: none !important;
+        }
+        .settingNavi {
+            border-bottom: 0px solid #d6dee5;
+            padding:  10px 15px !important;
+            text-align: left;
+            background: #E26E67 !important;
+            margin-top: -10px !important;
+        }
+        .setting_on {
+            background: transparent !important;
+            border: none !important;
+            color: #212121 !important;
+        }
+        .setting_on span {
+            font-weight: bold;
+            text-transform: uppercase !important;
+        }
+        .settingNavi a {
+            color: #FFF !important;
+            font-size: 9pt !important;
+            font-weight: bold !important;
+            text-transform: uppercase !important;
+        }
+    /** CONTENT **/
+        .btn_type01 {
+            border: none;
+            border: 1px solid #EBEBEB !important;
+            background: none !important;
+            background-color: #F3F4F5 !important;
+            padding-bottom: 3px !important;
+        }
+}
+
+@-moz-document regexp("http://www.pixiv.net/bookmark.php?.*type=user.*") {
+/* MYFOLLOWING PAGE */
+    /** PROFILE BOX **/
+        ._unit.profile-unit {
+            background: #FFF !important;
+            border: 1px solid #ebebeb !important;
+            border-radius: 1px !important;
+            padding: 10px 12px 14px 10px !important;
+            height: 217px !important;
+            margin-top: 50px !important;
+            text-align: left !important;
+        }
+        .profile-unit .user-image {
+            border: 1px solid #ebebeb !important;
+            border-width: 1px 1px 0px 1px !important;
+            border-radius: 1px !important;
+            min-width: 172px !important;
+            min-height: 172px !important;
+        }
+        .profile-unit .user {
+            background: rgba(0,0,0,.9) !important;
+            color: #FFF !important;
+            font-size: 15pt !important;
+            font-weight: 900 !important;
+            padding: 6px 0px !important;
+            width: 172px !important;
+            max-height: 30px !important;
+            margin-left: 3px !important;
+            margin-top: -2px !important;
+            text-align: center !important;
+        }
+        .profile-unit .badges {
+            border-top: 0px solid #e0e6ec !important;
+        }
+    /** FOLLOWING BOX **/
+        ._unit.list-unit.following-unit,
+        ._unit.list-unit.mypixiv-unit {
+            padding: 11px 11px 14px 11px !important;
+        }
+        .list-unit .more {
+            display: none !important;
+        }
+        ._unit.list-unit.following-unit .unit-title,
+        ._unit.list-unit.mypixiv-unit  .unit-title {
+            background: transparent !important;
+            font-weight: 900 !important;
+            text-transform: uppercase !important;
+            margin-top: -3px !important;
+        } 
+        ._unit.list-unit.following-unit .unit-count,
+        ._unit.list-unit.mypixiv-unit  .unit-count {
+            color: #212121 !important;
+            font-weight: bold !important;
+            font-family: "Roboto" !important;
+            right: 16px !important;
+            top: 8px !important;
+        }   
+        .list-unit .related {
+            display: none !important;
+        }     
+    /** ARTISTS BOX **/
+        .column-main {
+            margin-left: 22px !important;
+            margin-top: 50px !important;
+            border-radius: 1px !important;
+            border-color: #EBEBEB !important;
+        }
+        .info {
+            background: #F9AE74 !important;
+            margin-left: -20px !important;
+            padding-right: 30px !important;
+        }
+        .label h1 a {
+            color: #FFF !important;
+            font-size: 10pt !important;
+            text-transform: uppercase;
+            line-height: 19px !important;
+        }
+        .count {
+            color: #FFF !important;
+            font-weight: bold !important;
+            font-size: 10pt !important;
+            margin-left: 10px !important;
+        }
+        .root {
+            border: none !important;
+        }
+        .control {
+            background: transparent !important;
+            border: none !important;
+            position: absolute !important;
+            top: 0px !important;
+            margin-top: 50px !important;
+            margin-left: 112px !important;
+        }
+        .control .pixiv-button {
+            background: none !important;
+            border: none !important;
+            font-weight: normal !important;
+            text-shadow: none !important;
+        }
+        .pages {
+            margin-left: -50px !important;
+        }
+        .button[rel="next"] {
+            background: none !important;
+            border: none !important;
+            width: 40px !important;
+            text-transform: uppercase !important;
+            margin-left: -20px !important;
+            margin-top: -2px !important;
+        }
+        .button[rel="prev"] {
+            background: none !important;
+            border: none !important;
+            width: 100px !important;
+            text-transform: uppercase !important;
+            margin-right: -35px !important;
+            margin-top: -2px !important;
+        }
+}
+
+
+@-moz-document url("http://www.pixiv.net/member_illust.php") {
+/* MANAGE PAGE */
+    /** PRENIUM MENU BOX **/
+        .side-menu.group-list.left-premium-menu {
+            margin-top: 50px !important;
+        }    
+    /** MANAGE BOX **/
+        /*** HEADER ***/
+            .column-header {
+                border: none !important;
+                background-color: #65878F !important;
+                padding: 11px 9px 9px 9px!important;
+                text-align: left !important;
+                width: 97.7% !important;
+                margin-top: -5px !important;
+            }
+            a[href="/upload.php"] {
+                color: #FFF !important;
+                font-size: 13pt !important;
+                position: absolute !important;
+                margin-top: -42px !important;
+                left: -754px !important;
+            }
+            .column-header .count-badge {
+                background: no-repeat url("http://i.imgur.com/2CYTVLU.png") right !important;
+                background-size: cover !important;
+                border-radius: 1px !important;
+                color: #FFF !important;
+                font-size: 10pt !important;
+                padding: 13px 34px 14px 142px !important;
+                text-transform: uppercase;
+                position: absolute;
+                right: 0px !important;
+                top: 0px !important;
+            }
+            .column-header .count-badge:after {
+                display: none !important;
+            }   
+            .menu-items {
+                box-shadow: none !important;
+                border: none !important;
+            }
+       /*** ACTION BAR ***/
+            .column-action-menu {
+                border-radius: 1px !important;
+                margin-top: 0px !important;
+                margin-bottom: -30px !important;
+            }
+            .column-action-menu input[type="submit"] {
+                background: none !important;
+                background-color: #F2F4F6 !important;
+                border-radius: 1px !important;
+            }
+}
+
+
+@-moz-document regexp("http://www.pixiv.net/bookmark.php.*"),
+regexp("http://www.pixiv.net/bookmark_add.php?.*illust_id=.*"),
+regexp("http://www.pixiv.net/bookmark_add.php?.*id=.*"),
+regexp("http://www.pixiv.net/bookmark_detail.php?.*illust_id=.*"),
+regexp("http://www.pixiv.net/recommended.php.*") {
+/* BOOKMARK PAGE */
+    /** LAYOUT **/
+        .layout-a,
+        .layout-body {
+            margin-top: 60px !important;
+            padding-bottom: 1px !important;
+        }  
+    /** BOOKMARK TAGS BOX **/
+        .area_new.bookmark-tags {
+            border-color: #EBEBEB !important;
+            border-radius: 1px !important;
+            padding: 11px !important;
+            margin-left: -22px !important;
+        }
+        .bg_gray {
+            background: transparent;
+        }
+    /** BOOKMARKS BOX **/
+        /*** HEADER ***/
+            .column-label {
+                background: #B8959B !important;
+                padding: 4px 4px 11px 4px !important;
+                margin-top: -5px !important;
+            }
+            .column-label a {
+                color: #FFF !important;
+                font-size: 13pt !important;
+            }
+            #illust-recommend .column-title {
+                padding: 13px !important;
+            }
+            .complete-unit .column-title {
+                padding: 5px 5px 10px 5px !important;
+            }
+            ._unit.manage-unit .count-badge {
+                background: no-repeat url("http://i.imgur.com/2CYTVLU.png") right !important;
+                background-size: cover !important;
+                border-radius: 1px !important;
+                color: #FFF !important;
+                font-size: 10pt !important;
+                padding: 19px 36px 19px 60px !important;
+                text-transform: uppercase;
+                position: absolute;
+                right: 0px !important;
+                top: 0px !important;
+            }
+            .tag-badge {
+                display: none !important;
+            } 
+            .column-order-menu + .column-action-menu {
+                background: transparent !important;
+                position: absolute !important;
+                top: 35px !important;
+                right: -22px !important;
+            }
+            #add_tag {
+                font-family: "Roboto" !important;
+                border-color: #EBEBEB !important;
+                text-transform: lowercase !important;
+            }
+           .column-action-menu ._button {
+                background: none !important;
+                border: none !important;
+                font-family: "Roboto" !important;
+            }
+            ._button[value*="Remove"] {
+                position: absolute !important;
+                left: -326px !important;
+                margin-top: -1px !important;
+            }
+            .column-action-menu ._button[value="Private"],
+            .column-action-menu ._button[value="Add"] {
+                display: none !important;
+            }
+            .column-action-menu .menu-items li + li {
+                border-left: 0px solid #fff;
+            }
+            ._clickable.select-none,
+            ._clickable.select-all {
+               display: none !important;
+            }
+        /*** CONTENT ***/
+            .pager-container + .menu-items {
+                display: none !important;
+            }
+            .pager-container {
+                margin-top: 20px !important;
+            }
+            a._button[rel="next"]::before {
+                content: "NEXT »" !important;
+                font-weight: 900;
+                font-size: 9pt !important;
+                margin-left: -21px;
+            }
+            a._button[rel="prev"]::before {
+                content: "« PREV" !important;
+                font-weight: 900;
+                font-size: 9pt !important;
+                margin-left: -21px;
+            }
+            a._button[rel="next"],
+            a._button[rel="prev"] {
+                width: 50px;
+                background: none;
+                border: none;
+                padding-top: 2px !important;
+            }
+            .pager-container i {
+                visibility: hidden;
+            }
+            .bookmark-count {
+                color: #FFF !important;
+                background-color: #F29B34;
+                border-radius: 1px !important;
+                font-weight: bold !important;
+                padding: 6px 12px 4px 12px !important;
+                font-size: 8pt !important;
+                font-weight: bold !important;
+                margin-top: -1px !important;
+                margin-right: -4px !important;
+            }
+            .bookmark-count ._icon {
+                filter: brightness(0) invert(1) !important;
+            }
+            .button-on {
+                border-radius: 1px !important;
+                padding: 5px 8px !important;
+            }
+            .image-response-count {
+                color: #FFF !important;
+                background-color: #212121;
+                font-weight: bold !important;
+                padding: 6px 6px 4px 6px !important;
+                border-radius: 1px !important;
+            }
+            .edit-bookmark.edit_link {
+                text-transform: lowercase;
+                font-weight: 900 !important;
+                font-size: 9pt !important;
+            }
+            ._button-lite-large {
+                background: #3D8EB9 !important;
+                border: none;
+                border-radius: 1px !important;
+                color: #FFF;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+                font-size: 11pt !important;
+                font-weight: 900 !important;
+                margin-bottom: 10px !important;
+                text-transform: lowercase !important;
+            }
+            ._button-large[value*="Edit"],
+            ._button-large[value="Add to Bookmarks"] {
+                background: none !important;
+                text-transform: lowercase !important;
+                font-family: "Roboto" !important;
+                border-radius: 1px !important;
+                background-color: #F2F4F6 !important;
+            }
+}
+
+@-moz-document regexp("http://www.pixiv.net/stacc/?.*mode=unify.*") {
+/* MYFEED PAGE */
+    /** LEFT BOX **/
+        /*** MYPROFILE BOX ***/
+            ._unit.my-profile-unit {
+                border-radius: 1px !important;
+                background: #FFF !important;
+                border: 1px solid #EBEBEB !important;
+                margin-top: 50px !important;
+            }
+            .my-profile-unit {
+                padding: 10px !important;
+            }
+            .my-profile-unit .user-link {
+                border: none !important;
+            }
+            .my-profile-unit .user {
+                font-size: 15pt !important;
+                margin-left: 5px !important;
+            }
+            .my-profile-unit .more,
+            .my-profile-unit .badges,
+            ._unit.menu-unit._ui-layout-west-history,
+            .related {
+                display: none !important;
+            }  
+       /*** FEED OPTIONS BOX ***/
+            .stacc_left_menu {
+                background: #FFF !important;
+                border-color: #EBEBEB !important;
+                border-width: 1px !important;
+                border-radius: 1px !important;
+                padding: 6px !important;
+            }
+            .stacc_left_menu_inner {
+                background-color: transparent !important;
+                border: 0px solid #FFF;
+            }
+            .stacc_left_menu_hline {
+                display: none !important;
+            }
+    /** FEED BOX **/
+        .stacc_center_area {
+            width: 95.6%;
+            padding: 15px 20px 10px 16px;
+            background-color: #fff;
+        }
+        .stacc_east_area {
+            background-color: #FFF;
+            border: 1px solid #EBEBEB;
+            border-radius: 1px;
+        }
+        .stacc_east_area_inner_inner {
+            background-color: transparent !important;
+        }
+        .stacc_status {
+            border-top: 0px solid #DFEBF1;
+            padding: .5em 0;
+        }
+}
+@-moz-document regexp("http://www.pixiv.net/search_user.php.*"),
+regexp("http://www.pixiv.net/bookmark_add.php.*") {
+/* SUGGESTION PAGE */
+    /** LAYOUT **/
+        ._unit.user-recommendation-unit {
+            margin-top: 60px !important;
+        }
+        ._unit.complete-unit {
+            margin-top: 60px !important;
+        }
+    /** HEADER **/
+        .user-recommend-reload {
+            border-radius: 1px !important;
+            font-size: 10pt !important;
+            text-transform: lowercase !important;
+            top: 10px;
+            right: 20px;
+            margin-right: -10px !important;
+        }
+        ._unit.user-recommendation-unit h1,
+        .complete-unit .column-title {
+            padding: 3px 9px 12px 3px !important;
+        }
+    /** CONTENT **/
+        .user-icon-container.ui-scroll-view {
+             border-radius: 1px !important;
+        }
+        .user-recommendation-item.child {
+            background-color: transparent;
+        }
+        .user-recommendation-item .related-user {
+            display: none !important;
+        }
+        .follow-button {
+            border-radius: 1px !important;
+            color: #FFF !important;
+            background: #0096db !important;
+            padding: 7px 14px !important;
+        }
+        .follow-more-button {
+            border-radius: 1px !important;
+            padding-right: 5px !important;
+        }
+        ._work.multiple {
+            padding-bottom: 0px;
+        }    
+}
+
+@-moz-document regexp("http://www.pixiv.net/bookmark_new_illust.php.*") {
+/* NEWWORK PAGE */
+    /** LAYOUT **/
+        .layout-body {
+            margin-top: 60px !important;
+            padding-bottom: 1px !important;
+        }
+    /** HEADER **/
+        .column-title {
+            background: #1ABC9C !important;
+            color: #FFF !important;
+            width: 96.5% !important;
+            font-size: 12pt !important;
+            margin-left: 0px !important;
+            padding: 17px !important;
+            margin-top: -5px !important;
+            margin-bottom: -1px !important;
+        }
+    /** CONTENT **/
+        .pager-container {
+            margin-top: 20px !important;
+        }
+        a._button[rel="next"]::before {
+            content: "NEXT »" !important;
+            font-weight: 900;
+            font-size: 9pt !important;
+            margin-left: -21px;
+        }
+        a._button[rel="prev"]::before {
+            content: "« PREV" !important;
+            font-weight: 900;
+            font-size: 9pt !important;
+            margin-left: -21px;
+        }
+        a._button[rel="next"],
+        a._button[rel="prev"] {
+            width: 50px;
+            background: none;
+            border: none;
+            padding-top: 2px !important;
+        }
+        .pager-container i {
+            visibility: hidden;
+        }
+}
+
+@-moz-document regexp("http://www.pixiv.net/search.php.*"),
+regexp("http://www.pixiv.net/new_illust.php.*") {
+/* SEARCH PAGE */
+    /** LAYOUT **/
+        .layout-body {
+            margin-top: 70px !important;
+        }
+    /** HEADER **/
+        .column-header .tabs  {
+            border: none !important;
+            background-color: #65878F !important;
+            padding: 11px 9px !important;
+            text-align: left !important;
+            width: 98.3% !important;
+        }
+        .column-header .tabs a {
+            color: #FFF !important;
+            font-weight: 900 !important;
+            text-transform: uppercase !important;
+            font-size: 9pt !important;
+        }
+        .column-header .tabs .current {
+            background: transparent !important;
+            border: none !important;
+            color: #444 !important;
+            text-transform: uppercase !important;
+        }    
+        .breadcrumb,
+        .column-label,
+        .comic-hot-works,
+        .pager-container + .menu-items,
+        .column-title{
+            display: none !important;
+        }
+    /** CONTENT **/
+        .pager-container {
+            font-size: 14px;
+            text-align: center !important;
+            margin-top: 20px !important;
+            margin-bottom: -10px !important;
+        }
+        .pager-container i {
+            visibility: hidden;
+        }
+        a._button[rel="next"]::before {
+            content: "NEXT »" !important;
+            font-weight: 900;
+            font-size: 9pt !important;
+            margin-left: -21px;
+        }
+        a._button[rel="prev"]::before {
+            content: "« PREV" !important;
+            font-weight: 900;
+            font-size: 9pt !important;
+            margin-left: -21px;
+        }
+        a._button[rel="next"],
+        a._button[rel="prev"] {
+            width: 50px;
+            background: none;
+            border: none;
+            padding-top: 1px !important;
+        }
+        .tabs._ui-tooltip {
+            display: none !important;
+        }     
+}
+
+@-moz-document regexp("http://www.pixiv.net/booth_follow_items.php.*") {
+/* BOOTH PAGE */
+    /** LAYOUT **/
+        .layout-body {
+            margin-top: 70px !important;
+        }
+    /** HEADER **/
+        .column-title {
+            background: #9684A3;
+            color: #FFF !important;
+            font-size: 14pt !important;
+            width: 96.6% !important;
+            padding: 15px 17px !important;
+            margin-left: -1px !important;
+            margin-top: -5px !important;
+        }
+        .count-badge {
+            background: no-repeat url("http://i.imgur.com/2CYTVLU.png") right !important;
+            background-size: cover !important;
+            border-radius: 1px !important;
+            color: #FFF !important;
+            font-size: 10pt !important;
+            padding: 19px 36px 17px 160px !important;
+            text-transform: uppercase;
+            position: absolute;
+            right: 0px !important;
+            top: 0px !important;
+        }
+    /** CONTENT **/
+        ._unit.booth-follow-items .description {
+            border-radius: 1px !important;
+            margin-top: 15px !important;
+        }
+        .pager-container i {
+            visibility: hidden;
+        }
+        a._button[rel="next"]::before {
+            content: "NEXT »" !important;
+            font-weight: 900;
+            font-size: 9pt !important;
+            margin-left: -21px;
+        }
+        a._button[rel="prev"]::before {
+            content: "« PREV" !important;
+            font-weight: 900;
+            font-size: 9pt !important;
+            margin-left: -21px;
+        }
+        a._button[rel="next"],
+        a._button[rel="prev"] {
+            width: 50px;
+            background: none;
+            border: none;
+            padding-top: 1px !important;
+        }
+        ._unit.booth-follow-items .information {
+            margin: 0 20px 12px;
+            border-radius: 1px !important;
+            margin-top: 10px !important;
+        }
+}
+
+@-moz-document regexp("http://www.pixiv.net/ranking_area.php?.*"),
+regexp("http://www.pixiv.net/ranking.php.*"),
+regexp("http://www.pixiv.net/ranking_log.php.*") {
+/* RANK PAGE */
+    /** LAYOUT **/
+        .layout-body,
+        .one_column {
+            margin-top: 60px !important;
+            padding-bottom: 1px !important;
+        }    
+    /** HEADER **/
+        .column-header {
+            margin-top: 15px !important;
+            width: 98.3% !important;
+        }
+        .column-header .tabs  {
+            border: none !important;
+            background-color: #D4DBC8 !important;
+            padding: 11px 9px !important;
+            text-align: left !important;
+        }
+        .column-header .tabs a {
+            color: #FFF !important;
+            font-weight: 900 !important;
+            text-transform: uppercase !important;
+            font-size: 9pt !important;
+        }
+        .column-header .tabs .current {
+            background: transparent !important;
+            border: none !important;
+            color: #444 !important;
+        }    
+        .related {
+            text-transform: uppercase !important;
+            font-weight: bold !important;
+            padding-bottom: 10px !important;
+        }
+        .related a {
+            color: #FFF !important;
+        }
+        .column-title {
+            text-transform: lowercase !important;
+            font-size: 13pt !important;
+            background: #E7E7E7 !important;
+            width: 96.4% !important;
+            margin-left: 0px !important;
+            padding: 10px 14px 14px 22px !important;
+            margin-top: 0px !important;
+        }
+        .column-title + ._about {
+            position: absolute !important;
+            right: 37px !important;
+            margin-left: 15px;
+            margin-top: 11px !important;
+        }
+        .column-menu {
+            background-color: #f2f4f6;
+            margin-top: -6px !important;
+            border-bottom: 1px solid #EBEBEB !important;
+            padding: 8px 2px 1px 2px !important;
+        }
+        ._unit .column-menu:nth-of-type(2) {
+            border-top: 1px solid #EBEBEB !important;
+            padding: 5px !important;
+            margin-top: -1px !important;
+        }
+    /** CONTENT **/
+        .ranking-items.old.autopagerize_page_element {
+            margin-top: 70px !important;
+        }
+        .ranking-items-container {
+            margin-top: 50px !important;
+        }
+        .one_column_top,
+        .one_column_body,
+        .onecolumnBottom {
+            border-color: #EBEBEB !important;
+            border-radius: 1px !important;
+        }
+}
+
+@-moz-document regexp("http://www.pixiv.net/member_illust.php.*"),
+regexp("http://www.pixiv.net/member.php?.*id=.*"),
+regexp("http://www.pixiv.net/bookmark.php?.*id=.*"),
+regexp("http://www.pixiv.net/mypixiv_all.php?.*id=.*"),
+regexp("http://www.pixiv.net/novel/member.php?.*id=.*"),
+regexp("http://www.pixiv.net/stacc/.*"),
+regexp("http://www.pixiv.net/novel/show.php?.*id=.*") {
+/* ARTIST PAGE */
+    /** GENEREAL **/
+        /*** LAYOUT ***/
+            .layout-a {
+                width: 992px !important;
+            }
+            .layout-a .layout-column-2 {
+                margin-top: 50px !important;
+            }
+            .stacc_east_area.stacc_east_area_not_myself {
+                border-color: #EBEBEB !important;
+            }
+            .ui-layout-east {
+                padding-bottom: 10px;
+                margin-left: 22px !important;
+                margin-right: -40px !important;
+                margin-top: 50px !important;
+            }
+            .layout-column-2 ._unit.manage-unit {
+                border-radius: 1px !important;
+                border: 1px solid #EBEBEB !important;
+                padding-bottom: 30px !important;
+            }
+            .layout-column-2 .column-header nav,
+            .extaraNavi {
+                background: #8BCBDE !important;
+                margin-top: -5px !important;
+            }
+            .two_column_top {
+                background: none !important;
+                background-color: #8BCBDE !important;
+                border: 1px solid #EBEBEB !important;
+                width: 782px !important;
+            }
+            .extaraNavi {
+                border-radius: 1px !important;
+                border: none !important;
+                padding: 9px 12px !important;
+                margin-top: -9px !important;
+            }
+            .layout-a .layout-column-2 .tabs {
+                border: none !important;
+                padding: 11px !important;
+            }
+            .column-header .tabs a,
+            .extaraNavi a {
+                color: #FFF !important;
+                font-weight: 900 !important;
+                text-transform: uppercase !important;
+                font-size: 9pt !important;
+            }
+            .column-header .tabs .current,
+            .extaraNavi .extra_on {
+                background: transparent !important;
+                border: none !important;
+                color: #444 !important;
+            }
+            .pager-container {
+                font-size: 14px;
+                text-align: center !important;
+                margin-top: 20px !important;
+                margin-bottom: -10px !important;
+            }
+            .pager-container i {
+                visibility: hidden;
+            }
+            a._button[rel="next"]::before {
+                content: "NEXT »" !important;
+                font-weight: 900;
+                font-size: 9pt !important;
+                margin-left: -21px;
+            }
+            a._button[rel="prev"]::before {
+                content: "« PREV" !important;
+                font-weight: 900;
+                font-size: 9pt !important;
+                margin-left: -21px;
+            }
+            a._button[rel="next"],
+            a._button[rel="prev"] {
+                width: 50px;
+                background: none;
+                border: none;
+                padding-top: 1px !important;
+            }
+            .button[rel="next"],
+            .button[rel="prev"] {
+                background: none !important;
+                border: none !important;
+                width: 40px !important;
+                text-transform: uppercase !important;
+                margin-left: -20px !important;
+                margin-top: -2px !important;
+            }
+        /*** PROFILE BOX ***/
+            ._unit.profile-unit {
+                background: #FFF !important;
+                border: 1px solid #ebebeb !important;
+                border-radius: 1px !important;
+                padding: 10px 12px 14px 10px !important;
+                height: 308px !important;
+                margin-top: 50px !important;
+                text-align: left !important;
+            }
+            .profile-unit .user-image {
+                border: 1px solid #ebebeb !important;
+                border-width: 1px 1px 0px 1px !important;
+                border-radius: 1px !important;
+                min-width: 172px !important;
+                min-height: 172px !important;
+            }
+            .profile-unit .user {
+                background: rgba(0,0,0,.9) !important;
+                color: #FFF !important;
+                font-size: 15pt !important;
+                font-weight: 900 !important;
+                padding: 6px 0px !important;
+                width: 172px !important;
+                max-height: 30px !important;
+                margin-left: 3px !important;
+                margin-top: -2px !important;
+                text-align: center !important;
+            }
+            #favorite-button {
+                background: none !important;
+                background-color: #F2F5F4 !important;
+                border-radius: 1px !important;
+                color: #555 !important;
+                margin-left: 2px !important;
+                width: 169px !important;
+            }
+            .request-mypixiv {
+                background: rgba(253,194,154,.4) !important;
+                border: 1px solid #f3cf81;
+                border-radius: 1px !important;
+                color: #555 !important;
+                text-shadow: none !important;
+                text-transform: lowercase !important;
+                width: 169px !important;
+                margin-left: 2px !important;
+                margin-bottom: 2px !important;
+            }
+            .request-mypixiv ._icon {
+                display: none;
+            }
+            .send-message.require-mail-authorization {
+                background: rgba(44,201,144,.4);
+                border: 1px solid #64DDBB !important;
+                color: #444 !important;
+                padding: 2px 45px 3px 44px !important;
+                margin-left: 2px !important;
+                text-align: left !important;
+                text-transform: lowercase !important;
+            }
+            ._icon.sprites-mail {
+                display: none !important;
+            }
+            #userjs-user-id-item {
+                display: none !important;
+            }
+            .profile-unit .badges {
+                border-top: 0px solid #e0e6ec !important;
+            }
+            .sprites-premium-badge {
+                background-image: url("https://cdn4.iconfinder.com/data/icons/small-n-flat/24/star-128.png") !important;
+                background-position: right top !important;
+                background-size: 25px auto !important;
+                padding: 20px !important;
+                margin-top: 5px !important;
+                position: absolute !important;
+                right: 20px !important;
+                top: 16px !important;
+                z-index: 9999 !important;
+            }
+            ._comike-web-catalog {
+                display: none !important;
+            }
+            #favorite-preference {
+                border-radius: 1px !important;
+                padding: 20px 12px !important;
+                border-color: #EBEBEB !important;
+            }
+            .button[value="OK"] {
+                background: none !important;
+                border-radius: 1px !important;
+                font-family: "Roboto" !important;
+                background-color: #F2F4F6 !important;
+            }
+            #modal-messages {
+                background: rgba(0,0,0,0.7);
+                z-index: 9999 !important;
+            }
+            #modal-messages .modal-window > div.mypixiv-message {
+                border-radius: 1px !important;
+                padding: 10px !important;
+            }
+            #modal-messages .modal-window div.mypixiv-message form textarea {
+                border-radius: 1px !important;
+                min-height: 90px !important;
+                min-width: 376px !important;
+                max-width: 376px !important;
+            }
+            #modal-messages .modal-window div.mypixiv-message form .buttons {
+                text-align: left;
+                margin: 5px;
+                margin-left: -4px !important;
+                margin-top: 15px !important;
+            }  
+            #modal-messages .modal-window div.mypixiv-message form .buttons input {
+                background: #65c7e9;
+                border-radius: 1px !important;
+                line-height: 0px !important;
+                text-transform: lowercase !important;
+                padding-bottom: 2px !important;
+            }
+            #modal-messages .modal-window div.mypixiv-message form .buttons .modal-cancel {
+                background: #aaa;
+                border-radius: 1px !important;
+                text-transform: lowercase !important;
+            }
+        /*** TAGS BOX***/
+            .area_new {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                font-family: "Roboto" !important;
+                padding: 10px !important;
+            }
+            .area_new.user-tags {
+                border-radius: 1px !important;
+                border-color: #EBEBEB !important;
+                padding: 11px !important;
+                min-height: 385px !important;
+                max-height: 385px !important;
+            }
+            .area_inside {
+                max-height: 380px !important;
+                overflow: hidden !important;
+            }
+            .area_title {
+                display: none !important;
+            }
+         /*** FAN BOX ***/
+            ._member-illust-medium-fanbox-area {
+                display: none;
+            }
+            ._member-page-fanbox-area {
+                border-radius: 1px;
+                margin-top: 1px !important;
+                margin-right: 1px !important;
+                margin-left: 1px !important;
+            }
+        /*** GROUP BOX ***/
+            .side-menu.group-list {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                padding: 11px !important;
+            }
+            .side-menu.group-list h1 {
+                display: none !important;
+            }
+        /*** GALLERY BOX ***/
+            ._unit.manage-unit .count-badge {
+                background: no-repeat url("http://i.imgur.com/2CYTVLU.png") right !important;
+                background-size: cover !important;
+                border-radius: 1px !important;
+                color: #FFF !important;
+                font-size: 10pt !important;
+                padding: 19px 36px 19px 60px !important;
+                text-transform: uppercase;
+                position: absolute;
+                right: 0px !important;
+                top: 0px !important;
+            }
+            ._image-items {
+                padding-top: 12px !important;
+            }
+    /** PROFILE SECTION **/
+        /*** FOLLOWING/MYPIXIV BOX ***/
+            ._unit.list-unit.following-unit,
+            ._unit.list-unit.mypixiv-unit {
+                padding: 11px !important;
+            }
+            .list-unit .more {
+                display: none !important;
+            }
+            ._unit.list-unit.following-unit .unit-title,
+            ._unit.list-unit.mypixiv-unit  .unit-title {
+                background: transparent !important;
+                font-weight: 900 !important;
+                text-transform: uppercase !important;
+                margin-top: -3px !important;
+            } 
+            ._unit.list-unit.following-unit .unit-count,
+            ._unit.list-unit.mypixiv-unit  .unit-count {
+                color: #212121 !important;
+                font-weight: bold !important;
+                font-family: "Roboto" !important;
+                right: 16px !important;
+                top: 8px !important;
+            }
+       /*** INFORMATION BOX ***/
+            .worksOption {
+                width: 98% !important;
+            }
+            .worksListOthersTitle {
+                background: transparent !important;
+                font-size: 13pt !important;
+                font-weight: bold;
+                padding: 5px 10px;
+                text-transform: lowercase !important;
+            }
+            .no-user .image-item .user.ui-profile-popup {
+                display: none;
+            }
+            .ws_table {
+                width: 100% !important;
+            }
+       /*** REPORT BUTTON ***/
+            a[href*="user_infomsg"] {
+                text-align: right !important;
+                width: 13.6%;
+                color: transparent !important;
+                background: url("http://i.imgur.com/h7v8SWh.png") !important;
+                background-position: right !important;
+                background-repeat: no-repeat !important;
+                background-size: 60px auto !important;
+                padding: 20px !important;
+                position: fixed;
+                bottom: 200px !important;
+                right: 22px !important;
+            }
+    /** WORKS SECTION **/
+        /*** GALLERY BOX ***/
+            .column-title,
+            .image-item .title,
+            ._work::before {
+                display: none !important;
+            }
+            ._work.ee ._layout-thumbnail {
+                border: 3px solid #EB6361 !important;
+            }
+        /*** ILLUSTRATION BOX ***/
+            .sibling-items,
+            .work-tags,
+            .share-button,
+            .worksShare,
+            ._comment-sticker-item,
+            .worksImageresponse,
+            .ads_value {
+                display: none !important;
+            }
+            .work-info,
+            .work-info.ui-expander-container {
+                padding: 20px !important;
+                max-height: 269px;
+                margin-bottom: 30px !important;
+                z-index: 9999 !important;
+                margin-top: -1px !important;
+            }
+            .work-info .meta,
+            .work-info .title,
+            .work-info .caption,
+            .user-reaction dl,
+            .scorE {
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+            }
+            .ui-expander-container .expand .button, 
+            .ui-expander-container .collapse .button {
+                background-color: transparent !important;
+                text-transform: uppercase !important;
+                font-weight: bold !important;
+                font-size: 9pt !important;
+            }
+            ._work-detail-unit .bookmark-container {
+                position: absolute;
+                top: -30px !important;
+                left: -3px !important;
+            }
+            .bookmark-container .button-on, 
+            .bookmark-container ._button {
+                background: none !important;
+                background-color: #E6DCDB !important;
+                border-radius: 1px !important;
+                color: #212121 !important;
+                text-shadow: none !important;
+                text-transform: lowercase !important;
+                padding: 5px 10px !important;
+                width: 100px !important;
+            }
+            .bookmark-count {
+                color: #FFF !important;
+                background-color: #F29B34;
+                border-radius: 1px !important;
+                padding: 6px 12px 4px 12px !important;
+                font-size: 8pt !important;
+                font-weight: bold !important;
+                margin-top: -1px !important;
+                margin-right: -4px !important;
+            }
+            .bookmark-count ._icon {
+                filter: brightness(0) invert(1) !important;
+            }
+            .works_display img {
+                max-width: 610px !important;
+            }
+            ._work-detail-unit .response-container .layout-column-1 {
+                float: left;
+                width: 100%;
+                margin-top: 40px !important;
+            }
+            ._comment-item,
+            ._comment-form textarea {
+                border-top: 0px solid #e2e9ed;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+            }
+            ._comment-form textarea {
+                padding: 10px 15px !important;
+                min-height: 90px !important;
+                min-width: 743px !important;
+                max-width: 743px !important;
+            }
+            ._comment-form .tabs li {
+                background-color: transparent;
+                border-right: 0px solid #d6dee5;
+            }
+            ._comment-form {
+                background-color: #f2f4f6;
+                border: 1px solid #d6dee5;
+                border-radius: 1px !important;
+                width: 100% !important;
+            }
+            ._comment-form .submit-button {
+                border-radius: 1px !important;
+                text-transform: lowercase !important;
+            }
+            .user-icon-container {
+                border-radius: 1px;
+            }
+            ._comment-item .date {
+                font-weight: 900 !important;
+            }
+            ._comment-item .action-list li {
+                color: rgba(153, 153, 153, 0.5);
+                padding-top: 5px !important;
+                text-transform: uppercase !important;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+                font-weight: 900 !important;
+            }
+            .reply._clickable::before {
+                content: "dd" !important;
+                color: transparent;
+                background: no-repeat url("http://i.imgur.com/hnOe6sb.png") center !important;
+                background-size: 12px auto !important;
+            }
+            ._work-detail-unit .more-comment {
+                background: #3D8EB9 !important;
+                border: none;
+                border-radius: 1px !important;
+                color: #FFF;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+                font-size: 11pt !important;
+                font-weight: 900 !important;
+                margin-left: 10px !important;
+                margin-bottom: 10px !important;
+                text-transform: lowercase !important;
+            }
+            .worksOptionRightInfo {
+                text-align: right !important;
+                width: 93.6%;
+                color: transparent !important;
+                background: url("http://i.imgur.com/h7v8SWh.png") !important;
+                background-position: right !important;
+                background-repeat: no-repeat !important;
+                background-size: 60px auto !important;
+                padding: 20px !important;
+                position: fixed;
+                bottom: 200px !important;
+                right: 22px !important;
+                z-index: 9999 !important;
+            }
+            .worksOptionRightInfo a {
+                color: transparent;
+            }
+        /*** RECOMMENDATIONS BOX ***/
+            #illust-recommend {
+                border-color: #EBEBEB !important;
+                border-radius: 1px !important;
+                padding: 8px !important;
+                float: left;
+                position: absolute !important;
+                margin-right: -182px;
+                margin-left: -209px !important;
+                top: 766px !important;
+            }
+            #illust-recommend h1 {
+                background: #344146 !important;
+                color: #FFF !important;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+                padding: 8px 12px !important;
+                text-transform: uppercase !important;
+                width: 172px !important;
+                margin-left: -8px !important;
+                margin-top: -10px !important;
+                margin-bottom: 30px !important;
+            }
+    /** BOOKMARKS SECTION **/
+       /*** GALLERY BOX ***/
+            .column-order-menu .menu-items {
+               display: none !important;
+            }
+            .image-response-count {
+                color: #FFF !important;
+                background-color: #212121;
+                font-weight: bold !important;
+                padding: 6px 6px 4px 6px !important;
+                border-radius: 1px !important;
+            }
+            .image-response-count ._icon {
+                filter: brightness(0) invert(1) !important;
+            }
+       /*** FOLLOWING BOX ***/
+            .column-header .count-badge {
+                background: no-repeat url("http://i.imgur.com/2CYTVLU.png") right !important;
+                background-size: cover !important;
+                border-radius: 1px !important;
+                color: #FFF !important;
+                font-size: 10pt !important;
+                padding: 12px 26px 13px 140px !important;
+                text-transform: uppercase;
+                position: absolute;
+                right: 0px !important;
+                top: 0px !important;
+            }
+            .column-header .count-badge:after {
+                content: " FOLLOWING" !important;
+            }
+            .members {
+                margin-top: 13px !important;
+            }
+    /** FEED SECTION **/
+       /*** NOTIFICATIONS BOX ***/
+            .stacc_right_area,
+            .stacc_layout_row_nowrap {
+                display: none !important;
+            }
+            .stacc_main_timeline .stacc_status {
+                border-top: 0px solid #DFEBF1;
+                padding: 10px !important;
+            }
+            #stacc_speak_form_textarea {
+                margin-top: 4px !important;
+                border-color: #EBEBEB !important;
+                min-height: 90px !important;
+                min-width: 743px !important;
+                max-width: 743px !important;
+            }
+            .stacc_speak_form_button input {
+                background: none !important;
+                background-color: #F4F5F6 !important;
+                border: 1px solid #EBEBEB !important;
+                color: #2490B7;
+                font-weight: 900 !important;
+                font-family: "Roboto" !important;
+                font-size: 10pt !important;
+                text-transform: lowercase !important;
+                margin-top: 14px !important;
+            }
+            .stacc_main_timeline .stacc_ref_thumb_inner {
+                padding-top: 5px !important;
+            }
+            .stacc_comment_list_status {
+                padding: 7px !important;
+                width: 92% !important;
+                margin-bottom: 5px !important;
+            }
+            .stacc_center_area .stacc_more_button {
+                background: #3D8EB9 !important;
+                border: none !important;
+                border-radius: 1px !important;
+                color: #FFF;
+                font-family: "Roboto", "ぼくたちのゴシック２ボールド" !important;
+                font-weight: 900 !important;
+                line-height: 10px !important;
+                margin-bottom: 10px !important;
+                text-transform: lowercase !important;
+            }
+            #enable-auto-view {
+                border-top: 0px solid #e0e6ec;
+            }
+}
+
+@-moz-document url("http://www.pixiv.net/bookmark_add.php") {
+        ._unit.complete-unit {
+            margin-top: 60px !important;
+            margin-bottom: -43px !important;
+        }
+}
+
+@-moz-document regexp("http://www.pixiv.net/bookmark_add.php?.*id=.*"),
+regexp("http://www.pixiv.net/bookmark_detail.php?.*illust_id=.*") {
+            .count-badge {
+                display: none !important;
+            }
+}
+
+@-moz-document regexp("http://www.pixiv.net/mypixiv_all.php?.*id=.*") {
+       /*** MYPIXIV BOX ***/
+            .count-badge {
+                background: no-repeat url("http://i.imgur.com/2CYTVLU.png") right !important;
+                background-size: cover !important;
+                border-radius: 1px !important;
+                color: #FFF !important;
+                font-size: 10pt !important;
+                padding: 12px 26px 13px 120px !important;
+                text-transform: uppercase;
+                position: absolute;
+                right: 0px !important;
+                top: 0px !important;
+            }
+            .count-badge:after {
+                content: " MYPIXIV" !important;
+            }    
+            .member-items {
+                margin-top: 25px !important;
+            }
+}
