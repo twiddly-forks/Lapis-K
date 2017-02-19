@@ -8,7 +8,7 @@ What's an userstyle ?
 
 Simply put, it's a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff. To use it, there is an add-on called 'Stylish' for the majority of the browser, so if you are on Chrome, Firefox, Opera and such go for it ! I also recommend you to go to userstyles.org (userstyles.org/) where you can found a lot of styles for a lot of website.
 
-What do 'Hope' change ?
+What do 'Root' change ?
 -------------------------------
 
 Contrary to the first script called 'Water', I wanted to keep the original layout of the site, headers are bigger and more colorful, changed some icons, removed some stuff, etcetera, you'll discover the rest if you use the script ~
