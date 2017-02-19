@@ -21,7 +21,7 @@ After installing 'Stylish', you'll have to 'write a new style', copy/paste the c
 * to install the font I used, namely 'Roboto' (www.fontsquirrel.com/fonts/roboto), 'Bokutachi no Gothic 2' (http://www.freejapanesefont.com/bokutachi-gothic-2-bold/), these two are free !
 * download Adblock Plus to kill the ads.
 * install GreaseMonkey (for Mozilla) or TamperMonkey (for Google).
-* install this script to expand the pixiv thumbnails 'https://sleazyfork.org/en/scripts/5250-unlimited-paginator-works/code', you can play with it by modifying the max-width of the pictures !
+* install this script to expand the pixiv thumbnails 'https://greasyfork.org/en/scripts/5480-pixiv-expand-thumbnails', you can play with it by modifying the max-width of the pictures !
 
 Where can I find your works ?
 -------------------------------
