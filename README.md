@@ -18,7 +18,7 @@ How to install it ?
 
 After installing 'Stylish', you'll have to 'write a new style', copy/paste the code in 'root.css', name the style and then save ! Before installing it, I suggest you :
 
-* to install the font I used, namely 'Roboto' (www.fontsquirrel.com/fonts/rob…), 'Bokutachi no Gothic 2' (www.freejapanesefont.com/bokut…), these two are free !
+* to install the font I used, namely 'Roboto' (www.fontsquirrel.com/fonts/roboto), 'Bokutachi no Gothic 2' (http://www.freejapanesefont.com/bokutachi-gothic-2-bold/), these two are free !
 * download Adblock Plus to kill the ads.
 * install GreaseMonkey (for Mozilla) or TamperMonkey (for Google).
 * install this script to expand the pixiv thumbnails 'greasyfork.org/en/scripts/5480…, you can play with it by modifying the max-width of the pictures !
