@@ -1,6 +1,6 @@
 # Root
 
-![screenshot](http://i.imgur.com/UIPqYjY.jpg)
+![screenshot](http://i.imgur.com/oSDwNRV.png)
 Pixiv is much better than deviantart. Apply 'Root' to have this wonderful style !
 
 What's an userstyle ?
