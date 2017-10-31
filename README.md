@@ -1,31 +1,58 @@
-# Root
+# Lapis-K
 
 ![screenshot](http://i.imgur.com/oSDwNRV.png)
-Pixiv is much better than deviantart. Apply 'Root' to have this wonderful style !
+Preview of Lapis-K.
 
-What's an userstyle ?
+About
 -------------------------------
 
-Simply put, it's a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff. To use it, there is an add-on called 'Stylish' for the majority of the browser, so if you are on Chrome, Firefox, Opera and such go for it ! I also recommend you to go to userstyles.org (userstyles.org/) where you can found a lot of styles for a lot of website.
+Lapis-K is a custom stylesheet for pixiv.
 
-What do 'Root' change ?
+A custom stylesheet (or userstyles) a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
+
+Instruction
 -------------------------------
 
-Contrary to the first script called 'Water', I wanted to keep the original layout of the site, headers are bigger and more colorful, changed some icons, removed some stuff, etcetera, you'll discover the rest if you use the script ~
+<strong>Step 1 : Install Stylish</strong>
 
-How to install it ?
+<span>Depending of your browser.</span>
+<ol>
+<li>for <a href="https://addons.mozilla.org/en-US/firefox/addon/stylish/">Mozilla Firefox</a></li>
+<li>for <a href="https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en">Google Chrome</a></li>
+<li>for <a href="https://addons.opera.com/en/extensions/details/stylish/">Opera</a></li>
+<li>for <a href="http://sobolev.us/stylish/">Safari</a></li>
+<li> for <a href="https://play.google.com/store/apps/details?id=ru.pmmlabs.stylish&amp;hl=en">Dolphin</a></li>
+</ol>
+
+<strong>Step 2 : Install the script </strong>
+<ol>
+<li> Via <a href="https://userstyles.org/styles/146398/lapis-k-pixiv-css">userstyles</a> : click the button <i>install Style</i> and it's done.</li>
+<li> Or <a href="https://pastebin.com/ia70Zdzv">manually</a> : create a new style in Stylish and copy/paste the script in it. The script was written for Firefox Mozilla, that's why for Google Chrome and such, you'll have to click the button <i>Import from Mozilla.</i></li>
+</ol>
+
+<strong>Step 3 : Install others scripts </strong>
+<ol>
+<li>Install <a href="https://greasyfork.org/en/scripts/31512-pixiv-bigger-scroll-thumbnails">Pixiv Bigger Scroll Thumbnails</a>.</li>
+<li>Install <a href="https://greasyfork.org/en/scripts/32133-pixiv-misc-edition">Pixiv Misc Edition</a></li>
+</ol>
+
+<strong>Step 4 : Install the font </strong>
+
+I use several fonts for my custom stylesheet.
+<ol>
+<li> <a href="https://www.fontsquirrel.com/fonts/pacifico">Pacifico</a></li>
+<li> <a href="https://www.fontsquirrel.com/fonts/roboto">Roboto</a> (make sure to install Roboto Condensed)</li>
+<li> <a href="http://www.freejapanesefont.com/bokutachi-gothic-2-bold/">Bokutachi no Gothic 2 </a></li>
+</ol>
+
+
+Trivia
 -------------------------------
 
-After installing 'Stylish', you'll have to 'write a new style', copy/paste the code in 'root.css', name the style and then save ! Before installing it, I suggest you :
+I decided to name the script Lapis-K because Lapis Lazuli is the name of a blue color. The K was intended to be a C at the first place which stands for Cube (like White Cube, a beta design for pixiv), but I didn't like the look of the C, thus K since they have more or less the same sound.
 
-* to install the font I used, namely 'Roboto' (www.fontsquirrel.com/fonts/roboto), 'Bokutachi no Gothic 2' (http://www.freejapanesefont.com/bokutachi-gothic-2-bold/), these two are free !
-* download Adblock Plus to kill the ads.
-* install GreaseMonkey (for Mozilla) or TamperMonkey (for Google).
-* install this script to expand the pixiv thumbnails 'https://greasyfork.org/en/scripts/5480-pixiv-expand-thumbnails', you can play with it by modifying the max-width of the pictures !
 
-Where can I find your works ?
+Report
 -------------------------------
 
-I have a deviantart page : nicknameisfortheweak.deviantart.com, I also submit my script in pastebin : http://pastebin.com/u/Catgrills
-
-And that's it, I hope you'll enjoy this script if you see this submission ! Like usual, if you find the script cool or bad, if you have questions, suggestions, there is a section called 'Comments', you can use it everytime !
+If you find some elements that weren't tweaked or that you simply want to modify or re-add an element that was removed, don't hesitate to report it in the comments.
