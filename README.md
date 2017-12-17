@@ -8,7 +8,7 @@ About
 
 Lapis-K is a custom stylesheet for pixiv.
 
-A custom stylesheet (or userstyles) a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
+A custom stylesheet (or userstyles) is a script with a bunch of pseudo-code that will change the aspect of any website, it's kind like make-up I guess : you'll be able to change/modify the visual of the elements of the page (background, icon, buttons, etc...) and even delete some useless stuff.
 
 Instruction
 -------------------------------
@@ -49,7 +49,7 @@ I use several fonts for my custom stylesheet.
 Trivia
 -------------------------------
 
-I decided to name the script Lapis-K because Lapis Lazuli is the name of a blue color. The K was intended to be a C at the first place which stands for Cube (like White Cube, a beta design for pixiv), but I didn't like the look of the C, thus K since they have more or less the same sound.
+I decided to name the script <i>Lapis-K</i> because Lapis Lazuli is the name of a blue color. The <i>K</i> was intended to be a C in the first place which stands for Cube (like White Cube, a beta design for pixiv), but I didn't like the look of the C, thus K since they have more or less the same sound.
 
 
 Report
