@@ -1,5 +1,5 @@
+@-moz-document domain("pixiv.net") {
 /* GENERAL */
-@-moz-document domain(pixiv.net) {
 /** DESCRIPTION : set the main font and change others elements for every page **/
         a,
         .button,
@@ -50,7 +50,17 @@
             left: 40px !important;
             margin: auto !important;
         }
-
+		.notifications.new-version {
+		    visibility: hidden;
+		}
+		._1NxDA4N > .thumbnail-menu {
+			position: static !important;
+		}
+		._premium-lead-popular-d-body,
+		._21Z_duQ {
+			display: none !important;
+		}
+		
 /* HEADER */
 /** DESCRIPTION : change the elements of the header **/
         ._global-header {
@@ -67,10 +77,10 @@
         }
         .title.header-logo::after {
             /*** HEADER INSIDE CONTAINER TITLE LOGO ***/
-            color: #83D6DE !important;
-            content: "It's fun drawing! お絵かきがもっと楽しくなる場所" !important;
-            font-family: "Pacifico", "ぼくたちのゴシック２ボールド" !important;
-            font-size: 14pt !important;
+            color: #54ACD2 !important;
+            content: "お絵かきがもっと楽しくなる場所" !important;
+            font-family: "ぼくたちのゴシック２ボールド" !important;
+            font-size: 15pt !important;
             width: 450px !important;
             position: absolute !important;
             margin-top: 12px !important;
@@ -119,8 +129,9 @@
         }
         ._global-header .navigation-list li .menu-icon.icon-bookmark {
             /*** HEADER INSIDE CONTAINER NAVIGATION CATEGORIES BOOKMARKS ICON ***/
-            background-image: url("https://i.imgur.com/HpRZUpM.png") !important;
+            background-image: url("https://i.imgur.com/ULlODFZ.png") !important;
             background-size: 21px auto !important;
+            background-position: center 40% !important;
         }
         ._global-header .navigation-list li .menu-icon.icon-feed {
             /*** HEADER INSIDE CONTAINER NAVIGATION CATEGORIES FEED ICON ***/
@@ -280,7 +291,6 @@
             margin-bottom: 6px !important;
         }
     
-
 /* HOME */
 /** DESCRIPTION : change the elements of the home page **/
         #page-mypage .ui-layout-west {
@@ -405,6 +415,9 @@
             /*** HOME WEST LAYOUT CONTAINER EVENT BOXES ***/
             visibility: hidden;
         }
+		.area_new.promotion-comic {
+  			display: none !important;
+		}
         #page-mypage a[href="event.php"] {
             background: no-repeat url("https://i.imgur.com/c3qdccO.png") center 45% !important;
             background-color: #FABFA1 !important;
@@ -508,6 +521,9 @@
             /*** HOME EAST LAYOUT MAIN CONTAINER INFO BOX TITLES ***/
             font-size: 10.5pt !important;
         }
+		._sketch-lives-container {
+			display: none !important;
+		} 
         #page-mypage #item-container .item {
             /*** HOME EAST LAYOUT MAIN CONTAINER WORKS BOXES ***/
             border-bottom: 1px dotted #BEBEBE !important;
@@ -1237,6 +1253,11 @@
             top: 40px;
             left: 220px;
         }
+		.bookmark-detail-unit ._user-icon {
+    		position: absolute;
+    		top: 40px;
+    		left: 220px;
+		}
         .bookmark-detail-unit .title {
             /*** MY BOOKMARKS DETAIL CONTAINER ILLUSTRATION TITLE ***/
             font-family: "Roboto", "KFhimaji";
@@ -1246,6 +1267,9 @@
             /*** MY BOOKMARKS DETAIL CONTAINER USER NAME ***/
             margin-left: 20px;
         }
+		.bookmark-detail-unit ._user-icon + .user-name {
+         	margin-left: 22px;
+		}
         .bookmark-detail-unit .input-box {
             /*** MY BOOKMARKS DETAIL CONTAINER INPUT ***/
             border-radius: 1px !important;
@@ -1288,7 +1312,7 @@
             text-shadow: none !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 150px !important;
+            bottom: 100px !important;
             z-index: 9999 !important;
         }
         .remove[value="Remove Selected"] {
@@ -1302,7 +1326,7 @@
             width: 50px !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 150px !important;
+            bottom: 100px !important;
             z-index: 9999 !important;
         }
         ._button-large[value="Edit Bookmark"] {
@@ -1320,7 +1344,7 @@
             text-shadow: none !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 210px !important;
+            bottom: 160px !important;
             z-index: 9999 !important;
         }
         .list-container.tag-container.work-tags-container,
@@ -1668,7 +1692,7 @@
             width: 50px !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 330px !important;
+            bottom: 235px !important;
             visibility: visible !important;
         }
         ._member-page-fanbox-area,
@@ -1712,6 +1736,7 @@
             background: #1DABB8 !important;
             border-radius: 1px !important;
             font-size: 9.5pt !important;
+            line-height: 18px !important;
             padding: 5px 10px !important;
             position: absolute !important;
             margin-top: -3px !important;
@@ -1791,7 +1816,7 @@
         }
         ._user-profile-card .profile ._user-icon {
             border: 1px solid #EBEBEB !important;
-            border-radius: 2px !important;
+            border-radius: 3px !important;
             height: 200px !important;
             width: 200px !important;
         }
@@ -1952,13 +1977,14 @@
         }
         .column-header .tabs {
             border: none !important;
-            font-size: 10.5pt !important;
+            font-size: 11pt !important;
             font-stretch: condensed !important;
             padding: 1px 0px !important;
         }
         .column-header .current {
             border: none !important;
-            color: #1D628B !important;
+            color: #00587A !important;
+            font-weight: normal !important;
         }
         .column-header .tabs li {
             border-right: 1px dotted #E7E7E7 !important;
@@ -2005,6 +2031,7 @@
         }
         .column-menu .menu-items .current {
             color: #00587A !important;
+            font-weight: normal !important;
         }
         .layout-a .layout-column-2 ._unit .column-title {
             /*** MEMBER ILLUSTRATION WORKS BOX MAIN TITLE ***/
@@ -2061,7 +2088,8 @@
             border-color: #2CC990 !important;
             transition: border-color 1s ease !important;
         }
-        .page-count {
+        .page-count,
+		.SN11CHZ {
             /*** MEMBER ILLUSTRATION WORKS BOX PICTURES PAGE COUNTER ***/
             background: #83D6DE !important;
             border: none !important;
@@ -2279,6 +2307,7 @@
             font-size: 9.5pt !important;
             font-stretch: condensed !important;
             font-weight: bold !important;
+            line-height: 18px !important;
             padding: 3px 10px !important;
             text-transform: uppercase;
         }
@@ -2293,6 +2322,7 @@
             color: #FFF !important;
             font-stretch: condensed !important;
             padding-bottom: 1px !important;
+            line-height: 32px !important;
             text-transform: uppercase !important;
             margin-left: 1px !important;
         }
@@ -2394,6 +2424,7 @@
             transition: all .3s ease-in-out !important;
             visibility: hidden;
             z-index: 9999 !important;
+            display: none;
         }
         ._unit._work-detail-unit #illust-recommend h1 {
             border-bottom: 1px dotted #EBEBEB !important;
@@ -2446,7 +2477,7 @@
             width: 50px !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 165px !important;
+            bottom: 100px !important;
             z-index: 9999 !important;
         }
         ._work-detail-unit .share-link-container,
@@ -2460,7 +2491,8 @@
             width: 700px !important;
             margin-left: 21px !important;
         }      
-        ._unit._work-detail-unit ._work.multiple:before {
+        ._unit._work-detail-unit ._work.multiple:before,
+		._work-detail-unit .response-container::after {
             display: none !important;
         }
         .works_display ._work.multiple {
@@ -2494,6 +2526,14 @@
             border-radius: 1px !important;
             width: 100% !important;
         }
+		.comment.header.require-mail-authorization {
+    		margin-top: -40px !important;
+			margin-left: -10px !important;
+		}
+		._2Jwpmcc {
+			width: 40px !important;
+			height: 40px !important;
+		}
         ._comment-form textarea {
             padding: 10px 15px !important;
         }
@@ -2511,11 +2551,22 @@
             border-top: none !important;
             border-bottom: 1px dotted #BEBEBE;
             padding: 20px 0px !important;
-            
         }
         #one_comment .worksImageresponse {
             border: none !important;
         }
+		._1VgMXYZ {
+    		margin-left: 10px !important;
+		}
+		._3Oz-lwO {
+			background: #FFF !important;
+			border: 1px solid #EBEBEB !important;
+			padding: 10px !important;
+			width: 80% !important;
+			margin-top: 10px !important;
+			margin-left: 2px !important;
+			margin-bottom: 14px !important;
+		}
         .user-name.ui-profile-popup {
             /*** MEMBER ILLUSTRATION MEDIUM COMMENTS CONTAINER POSTER NAME ***/
             font-family: "Roboto", "KFhimaji" !important;
@@ -2524,12 +2575,14 @@
             /*** MEMBER ILLUSTRATION MEDIUM COMMENTS CONTAINER POSTED DATE ***/
             margin-left: 8px !important;
         }
-        ._work-detail-unit .more-comment {
+        ._work-detail-unit .more-comment,
+		._3aAuVt- {
             /*** MEMBER ILLUSTRATION MEDIUM COMMENTS CONTAINER MORE BUTTON ***/
             background: #83D6DE !important;
             border: none !important;
             border-radius: 1px !important;
             color: #FFF !important;
+            font-family: "Roboto";
             font-size: 10.5pt !important;
             font-stretch: condensed !important;
             font-weight: bold !important;
@@ -2540,6 +2593,12 @@
             right: 0px !important;
             margin: 20px auto !important;
         }
+		._1BCR88- * {
+			font-family: "Roboto", "KFhimaji" !important;
+			font-size: 11pt !important;
+			font-stretch: condensed !important;
+			letter-spacing: .3px !important;
+		}
         .profile-module ._1x0OML_ {
             /*** MEMBER ILLUSTRATION MEDIUM PROFILE CONTAINER ***/
             border: 1px solid #EBEBEB !important;
@@ -3089,11 +3148,7 @@
         }
 }
 
-@-moz-document url("https://www.pixiv.net/bookmark.php"),
-regexp("https://www.pixiv.net/bookmark.php\\?(rest|tag)=.*"),
-regexp("https://www.pixiv.net/bookmark.php\\?type=user&rest=.*"),
-regexp("https://www.pixiv.net/bookmark.php\\?type=reg_user.*"),
-regexp("https://www.pixiv.net/comment_all.php.*") {
+@-moz-document url("https://www.pixiv.net/bookmark.php"), regexp("https://www.pixiv.net/bookmark.php\\?(rest|tag)=.*"), regexp("https://www.pixiv.net/bookmark.php\\?type=user&rest=.*"), regexp("https://www.pixiv.net/bookmark.php\\?type=reg_user.*"), regexp("https://www.pixiv.net/comment_all.php.*"), regexp("https://www.pixiv.net/bookmark_tag_all.php.*") {
 /* MY BOOKMARKS/FOLLOWS/FOLLOWERS/COMMENTS */
 /** DESCRIPTION : change the elements of the personal bookmarks page **/
         .layout-a .layout-column-2 {
@@ -3179,7 +3234,7 @@ regexp("https://www.pixiv.net/comment_all.php.*") {
             text-shadow: none !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 150px !important;
+            bottom: 100px !important;
             z-index: 9999 !important;
         }
         ._button[value="Private"] {
@@ -3194,7 +3249,7 @@ regexp("https://www.pixiv.net/comment_all.php.*") {
             text-shadow: none !important;
             position: fixed !important;
             right: 26px !important;
-            bottom: 210px !important;
+            bottom: 160px !important;
             z-index: 9999 !important;
         }
         #illust-recommend {
@@ -3253,192 +3308,17 @@ regexp("https://www.pixiv.net/comment_all.php.*") {
         }
 }
 
-@-moz-document regexp("https://www.pixiv.net/stacc/my/home/.*"),
-regexp("https://www.pixiv.net/stacc/\\?mode=unify.*"),
-regexp("https://www.pixiv.net/group/\\?id=.*") {
-        .ui-layout-west {
+@-moz-document regexp("https://www.pixiv.net/stacc/my/home/.*"), regexp("https://www.pixiv.net/stacc/\\?mode=unify.*"), regexp("https://www.pixiv.net/group/\\?id=.*") {
+.ui-layout-west {
             display: none !important;
         }
 }
 
-@-moz-document regexp("https://www.pixiv.net/bookmark.php.*\?id=.*") {
-        ._unit .column-header {
+@-moz-document regexp("https://www.pixiv.net/bookmark.php.*\\?id=.*") {
+._unit .column-header {
             top: -90px !important;
         }
         nav.column-menu .menu-items {
             visibility: hidden !important;
-        }   
-}
-
-@-moz-document regexp("https://www.pixiv.net/bookmark.php?id=.*") {
-        .ui-scroll-view {
-            height: inherit !important;
-        }
-}
-
-@-moz-document url("https://www.pixiv.net/bookmark_add.php") {
-        .layout-body ._unit .column-title {
-            margin-left: 19px !important;
-        }
-        .column-menu .menu-items:nth-of-type(2) {
-            padding-left: 0px !important;
-            position: absolute;
-            left: -30px !important;
-        }
-}
-
-@-moz-document regexp("https://www.pixiv.net/new_illust.php.*"),
-regexp("https://www.pixiv.net/ranking_area.php\\?.*"),
-regexp("https://www.pixiv.net.ranking.php.*") {
-        .column-header {
-            background: transparent !important;
-            border: none !important;
-            visibility: hidden;
-        }
-        a[href*="/ranking_log.php"] {
-            background: no-repeat url("https://i.imgur.com/c3qdccO.png") center 45% !important;
-            background-color: #FABFA1 !important;
-            background-size: 32px auto !important;
-            border-radius: 50% !important;
-            color: transparent !important;
-            height: 50px !important;
-            width: 40px !important;
-            visibility: visible !important;
-            position: fixed !important;
-            right: 26px !important;
-            bottom: 100px !important;
-        }
-        a[href="/ranking.php"] {
-            background: no-repeat url("https://i.imgur.com/seZMtRv.png") center !important;
-            background-color: #4CD4B0 !important;
-            background-size: 22px auto !important;
-            border-radius: 50% !important;
-            color: transparent !important;
-            height: 50px !important;
-            width: 40px !important;
-            visibility: visible !important;
-            position: fixed !important;
-            right: 26px !important;
-            bottom: 165px !important;
-        }
-        .column-header .tabs .current[href="/ranking_area.php"] {
-            background: no-repeat url("https://i.imgur.com/qHWKbsG.png") center !important;
-            background-color: #FFD41E !important;
-            background-size: 38px auto !important;
-            border-radius: 50% !important;
-            color: transparent !important;
-            height: 50px !important;
-            width: 23px !important;
-            visibility: visible !important;
-            position: fixed !important;
-            right: 26px !important;
-            bottom: 230px !important;
-        }
-        a[href="/ranking_area.php?ref=rn-h-area"] {
-            background: no-repeat url("https://i.imgur.com/qHWKbsG.png") center !important;
-            background-color: #FFD41E !important;
-            background-size: 38px auto !important;
-            border-radius: 50% !important;
-            color: transparent !important;
-            height: 50px !important;
-            width: 40px !important;
-            visibility: visible !important;
-            position: fixed !important;
-            right: 26px !important;
-            bottom: 210px !important;
-        }
-        .layout-body ._unit .column-menu {
-            background: transparent !important;
-            margin-left: -2px !important;
-            display: block !important;
-        }
-}
-
-@-moz-document regexp("https://www.pixiv.net/search.php\\?.*"),
-regexp("https://www.pixiv.net/group/search_group.php\\?.*") {
-/* SEARCH */
-/** DESCRIPTION : change the elements of the search page **/
-        ._unit .column-header {
-            /*** SEARCH NAVIGATION HEADER ***/
-            visibility: hidden;
-        }
-        .column-label .options {
-            display: none !important;
-        }
-        .column-label .tabs {
-            /*** SEARCH NAVIGATION HEADER TABS ***/
-            border: none !important;
-            width: 580px !important;
-            top: 130px !important;
-            left: -203px !important;
-            visibility: visible !important;
-        }
-        .column-label .tabs li {
-            border-right: none !important;
-            font-size: 10.5pt !important;
-            margin-right: -10px !important;
-        }
-        .column-label .tabs .current {
-            background: transparent !important;
-        }
-        .column-label .tabs li a {
-            border: none !important;
-        }
-        .column-label .tabs li a::after {
-            color: #E6DCDB !important;
-            content: " / " !important;
-            visibility: visible !important;
-            position: absolute !important;
-            margin-left: 8px !important;
-        }
-        .column-label .tabs li:last-child a:after {
-            color: transparent !important;
-        }
-        .breadcrumb {
-            display: none !important;
-        }
-        ._layout-order-bookmark-wrapper {
-            visibility: hidden;
-        }
-        .column-related.inline-list {
-            /*** SEARCH RELATED TAGS ***/
-            text-align: left !important;
-            margin-left: 19px !important;
-        }
-        .popular-introduction,
-        #js-react-search-top,
-        ._premium-lead-tag-search-bar .orange-back {
-            /*** SEARCH POPULAR BOX ***/
-            display: none !important;
-        }
-}
-
-@-moz-document regexp("https://www.pixiv.net/member_illust.php\\?mode=medium.*") {
-        .ui-layout-west .area_new,
-        #pixiv_id {
-            display: none;
-        }
-}
-
-@-moz-document regexp("https://www.pixiv.net/novel/show.php\\?id=.*") {
-        .ui-layout-west .area_new {
-            display: none;
-        }
-        #wrapper > .layout-body:not(#page-bookmark-user) {
-            position: initial !important;
-        }
-        .layout-a .layout-column-2 {
-            left: 40px !important;
-        }
-}
-
-@-moz-document url("https://www.pixiv.net/setting_info.php"),
-url("https://www.pixiv.net/stacc/my/setting") {
-        #wrapper > #contents {
-            width: 80% !important;
-            position: absolute !important;
-            right: 0px !important;
-            left: 40px !important;
-            margin: auto !important;
         }
 }
