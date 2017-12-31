@@ -50,16 +50,17 @@
             left: 40px !important;
             margin: auto !important;
         }
-		.notifications.new-version {
-		    visibility: hidden;
-		}
-		._1NxDA4N > .thumbnail-menu {
-			position: static !important;
-		}
-		._premium-lead-popular-d-body,
-		._21Z_duQ {
-			display: none !important;
-		}
+	.notifications.new-version {
+	    visibility: hidden;
+	}
+	._1NxDA4N > .thumbnail-menu {
+		position: static !important;
+	}
+	._premium-lead-popular-d-body,
+	._21Z_duQ,
+	a[href*="campaign"] {
+		display: none !important;
+	}
 		
 /* HEADER */
 /** DESCRIPTION : change the elements of the header **/
