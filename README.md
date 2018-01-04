@@ -1,6 +1,6 @@
 # Lapis-K
 
-![screenshot](https://a.pomf.cat/xuwyzk.png)
+![screenshot](https://s1.gifyu.com/images/Screenshot-1225.png)
 Preview of Lapis-K.
 
 About
