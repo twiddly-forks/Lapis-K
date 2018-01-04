@@ -325,8 +325,8 @@
         ._profile-menu-unit ul.profile .user-name-container {
             /*** HOME WEST LAYOUT CONTAINER PROFILE BOX NICKNAME ***/
             height: 52px !important;
-            margin-left: 8px !important;
             margin-top: -119px !important;
+            margin-left: 8px !important;
         }
         ._profile-menu-unit ul.profile .user-name-container .user-name {
             font-size: 18pt !important;
