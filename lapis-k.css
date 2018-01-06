@@ -4131,3 +4131,227 @@ regexp("https://www.pixiv.net/group/\\?id=.*") {
 
 }
 
+@-moz-document regexp("https://www.pixiv.net/new_illust.php.*"),
+regexp("https://www.pixiv.net/ranking_area.php\\?.*"),
+regexp("https://www.pixiv.net.ranking.php.*") {
+	.column-header {
+		background: transparent !important;
+		border: none !important;
+		visibility: hidden;
+	}
+
+	a[href*="/ranking_log.php"] {
+		background: no-repeat url("https://i.imgur.com/c3qdccO.png") center 45% !important;
+		background-color: #FABFA1 !important;
+		background-size: 32px auto !important;
+		border-radius: 50% !important;
+		color: transparent !important;
+		height: 50px !important;
+		width: 40px !important;
+		visibility: visible !important;
+		position: fixed !important;
+		right: 26px !important;
+		bottom: 100px !important;
+	}
+
+	a[href="/ranking.php"] {
+		background: no-repeat url("https://i.imgur.com/seZMtRv.png") center !important;
+		background-color: #4CD4B0 !important;
+		background-size: 22px auto !important;
+		border-radius: 50% !important;
+		color: transparent !important;
+		height: 50px !important;
+		width: 40px !important;
+		visibility: visible !important;
+		position: fixed !important;
+		right: 26px !important;
+		bottom: 165px !important;
+	}
+
+	.column-header .tabs .current[href="/ranking_area.php"] {
+		background: no-repeat url("https://i.imgur.com/qHWKbsG.png") center !important;
+		background-color: #FFD41E !important;
+		background-size: 38px auto !important;
+		border-radius: 50% !important;
+		color: transparent !important;
+		height: 50px !important;
+		width: 23px !important;
+		visibility: visible !important;
+		position: fixed !important;
+		right: 26px !important;
+		bottom: 230px !important;
+	}
+
+	a[href="/ranking_area.php?ref=rn-h-area"] {
+		background: no-repeat url("https://i.imgur.com/qHWKbsG.png") center !important;
+		background-color: #FFD41E !important;
+		background-size: 38px auto !important;
+		border-radius: 50% !important;
+		color: transparent !important;
+		height: 50px !important;
+		width: 40px !important;
+		visibility: visible !important;
+		position: fixed !important;
+		right: 26px !important;
+		bottom: 210px !important;
+	}
+
+	.layout-body ._unit .column-menu {
+		background: transparent !important;
+		margin-left: -2px !important;
+		display: block !important;
+	}
+
+}
+
+@-moz-document regexp("https://www.pixiv.net/search.php\\?.*"),
+regexp("https://www.pixiv.net/group/search_group.php\\?.*") {
+
+	/* SEARCH */
+
+	/** DESCRIPTION : change the elements of the search page **/
+	._unit .column-header {
+
+		/*** SEARCH NAVIGATION HEADER ***/
+		visibility: hidden;
+	}
+
+	.column-label .options {
+		display: none !important;
+	}
+
+	.column-label .tabs {
+
+		/*** SEARCH NAVIGATION HEADER TABS ***/
+		border: none !important;
+		width: 580px !important;
+		top: 130px !important;
+		left: -203px !important;
+		visibility: visible !important;
+	}
+
+	.column-label .tabs li {
+		border-right: none !important;
+		font-size: 10.5pt !important;
+		margin-right: -10px !important;
+	}
+
+	.column-label .tabs .current {
+		background: transparent !important;
+	}
+
+	.column-label .tabs li a {
+		border: none !important;
+	}
+
+	.column-label .tabs li a::after {
+		color: #E6DCDB !important;
+		content: " / " !important;
+		visibility: visible !important;
+		position: absolute !important;
+		margin-left: 8px !important;
+	}
+
+	.column-label .tabs li:last-child a:after {
+		color: transparent !important;
+	}
+
+	.breadcrumb {
+		display: none !important;
+	}
+
+	._layout-order-bookmark-wrapper {
+		visibility: hidden;
+	}
+
+	.column-related.inline-list {
+
+		/*** SEARCH RELATED TAGS ***/
+		text-align: left !important;
+		margin-left: 19px !important;
+	}
+
+	.popular-introduction,
+	#js-react-search-top,
+	._premium-lead-tag-search-bar .orange-back {
+
+		/*** SEARCH POPULAR BOX ***/
+		display: none !important;
+	}
+
+}
+
+@-moz-document regexp("https://www.pixiv.net/member_illust.php\\?mode=medium.*") {
+	.ui-layout-west .area_new,
+	#pixiv_id {
+		display: none;
+	}
+
+}
+
+@-moz-document regexp("https://www.pixiv.net/novel/show.php\\?id=.*") {
+	.ui-layout-west .area_new {
+		display: none;
+	}
+
+	#wrapper > .layout-body:not(#page-bookmark-user) {
+		position: relative !important;
+	}
+
+	.layout-a .layout-column-2 {
+		left: 40px !important;
+	}
+
+}
+
+@-moz-document url("https://www.pixiv.net/setting_info.php"),
+url("https://www.pixiv.net/stacc/my/setting") {
+	#wrapper > #contents {
+		width: 80% !important;
+		position: absolute !important;
+		right: 0px !important;
+		left: 40px !important;
+		margin: auto !important;
+	}
+
+}
+
+@-moz-document regexp("https://www.pixiv.net/bookmark_new_illust.php.*"),
+regexp("https://www.pixiv.net/search.php.*") {
+	#js-mount-point-latest-following,
+	#js-react-search-mid {
+		background: #FFF !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		min-height: 900px !important;
+		padding: 20px 0px !important;
+		margin-top: 50px !important;
+		margin-left: 19px !important;
+	}
+
+	.pager-container {
+		margin-bottom: 20px !important;
+	}
+
+	.column-label .tabs {
+		background: #FFF !important;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+		padding: 12px 8px 15px 8px !important;
+		margin-left: 19px !important;
+		margin-bottom: -25px !important;
+	}
+
+	.column-label .tabs a {
+		font-size: 11pt !important;
+		font-stretch: condensed !important;
+	}
+
+	.column-label .tabs a.current {
+		color: #00587A !important;
+		font-weight: normal;
+	}
+
+	.column-label .menu-items {
+		display: none !important;
+	}
+
+}
