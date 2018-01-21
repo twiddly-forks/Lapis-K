@@ -2,7 +2,7 @@
 
 ![screenshot](https://s1.gifyu.com/images/Screenshot-1284.png)
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1285.png)
+![screenshot](https://s1.gifyu.com/images/Screenshot-1286.png)
 
 Preview of <i>Lapis-K</i>.
 
