@@ -2513,7 +2513,7 @@
 		color: transparent !important;
 		content: "dd" !important;
 		position: absolute;
-		margin-top: 9px !important;
+		margin-top: 7px !important;
 		margin-left: -14px !important;
 		filter: brigthness(0) invert(1) !important;
 	}
@@ -2526,7 +2526,7 @@
 	}
 
 	._unit.manage-unit .column-menu .menu-items {
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		text-transform: capitalize !important;
 		margin-top: -5px !important;
