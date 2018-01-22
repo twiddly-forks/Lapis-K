@@ -3755,8 +3755,8 @@
 	}
 
 	.settingProfile:before {
-		background: no-repeat url("https://i.imgur.com/BhHjLZC.png") center !important;
-		background-size: 24px auto !important;
+		background: no-repeat url("https://i.imgur.com/BhHjLZC.png") center 55% !important;
+		background-size: 31px auto !important;
 		color: transparent !important;
 		content: "ddd" !important;
 		padding-right: 10px !important;
@@ -4419,7 +4419,8 @@ regexp("https://www.pixiv.net/group/search_group.php\\?.*") {
 }
 
 @-moz-document url("https://www.pixiv.net/setting_info.php"),
-url("https://www.pixiv.net/stacc/my/setting") {
+url("https://www.pixiv.net/stacc/my/setting"),
+regexp("https://www.pixiv.net/setting_.*.php") {
 	#wrapper > #contents {
 		width: 80% !important;
 		position: absolute !important;
