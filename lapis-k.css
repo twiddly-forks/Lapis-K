@@ -395,8 +395,8 @@
 		/*** HOME WEST LAYOUT CONTAINER PROFILE BOX AVATAR ***/
 		border: 1px solid #EBEBEB !important;
 		border-radius: 2px !important;
-		height: 172px !important;
-		width: 172px !important;
+		height: 200px !important;
+		width: 200px !important;
 	}
 
 	._user-icon.cover-texture::before {
@@ -407,8 +407,8 @@
 
 		/*** HOME WEST LAYOUT CONTAINER PROFILE BOX NICKNAME ***/
 		height: 52px !important;
-		margin-left: 8px !important;
-		margin-top: -119px !important;
+		margin-left: 13px !important;
+		margin-top: -140px !important;
 	}
 
 	._profile-menu-unit ul.profile .user-name-container .user-name {
@@ -427,46 +427,45 @@
 		margin-left: -10px !important;
 	}
 
-	._profile-menu-unit .menu-item  a {
+	._profile-menu-unit .menu-item a {
 
 		/*** HOME WEST LAYOUT CONTAINER PROFILE BOX USER BUTTONS ***/
 		border-radius: 1.5px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		padding: 12px 15px 14px 15px !important;
+		padding: 12px 15px !important;
 		width: 70px;
 		position: absolute;
-		top: 64px !important;
-		left: 200px !important;
+		top: 74px !important;
 	}
 
 	._profile-menu-unit .menu-item .js-click-trackable-later[href*="/bookmark.php?type=user"] {
 		background: #3897D9 !important;
-		left: 193px !important;
+		left: 228px !important;
 	}
 
 	._profile-menu-unit .menu-item .js-click-trackable-later[href*="/bookmark.php?type=user"] .count {
 		border-left: 1px dotted #EBEBEB !important;
 		color: #EBEBEB !important;
-		padding-left: 6px !important;
+		padding-left: 4px !important;
 	}
 
 	._profile-menu-unit .menu-item .js-click-trackable-later[href*="/bookmark.php?type=reg_user"] {
 		background-color: #5ECA7F !important;
-		left: 303px !important;
+		left: 338px !important;
 	}
 
 	._profile-menu-unit .menu-item .js-click-trackable-later[href="/comment_all.php"] {
 		background-color: #F6CD61 !important;
-		left: 413px !important;
+		left: 448px !important;
 	}
 
 	._profile-menu-unit .menu-item .js-click-trackable-later[href="/history.php"] {
 		background-color: #60646D !important;
 		width: 100px !important;
-		left: 523px !important;
+		left: 558px !important;
 	}
 
 	._profile-menu-unit .menu-item .js-click-trackable-later[href="/fanbox/purchase_history"],
@@ -834,8 +833,8 @@
 		height: 40px !important;
 		width: 70% !important;
 		position: absolute;
-		top: -113px !important;
-		left: 193px !important;
+		top: -95px !important;
+		left: 228px !important;
 	}
 
 	#column-misc .item {
@@ -860,8 +859,10 @@
 	#column-misc .item * {
 		background: transparent !important;
 		color: #258FB8 !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-weight: normal !important;
+		margin-top: 0px !important;
+		margin-left: 5px !important;
 	}
 
 	.item.rookie {
@@ -894,7 +895,7 @@
 		position: absolute !important;
 		left: 19px !important;
 		right: 0px !important;
-		margin: 20px auto !important;
+		margin: 0px auto !important;
 	}
 
 	.ranking-items.old .ranking-item {
@@ -919,13 +920,14 @@
 	}
 
 	.ranking-items.old .ranking-item .rank .label.ui-scroll {
-		color: #00587A !important;
+		color: transparent !important;
 	}
 
 	.ranking-items.old .ranking-item .work {
 
 		/*** RANKING MAIN CONTAINER ILLUSTRATION ***/
 		border: 1px solid #EBEBEB !important;
+		height: 162px !important;
 	}
 
 	.ranking-items.old .ranking-item .work:before {
@@ -945,6 +947,12 @@
 	.ranking-items.old .ranking-item .data h2 a {
 		font-family: "Roboto", "KFhimaji" !important;
 		font-size: 13pt !important;
+	}
+
+	.ranking-items.old  .inline-list * {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		text-transform: lowercase !important;
 	}
 
 	/* DAILY RANKING */
@@ -984,7 +992,7 @@
 		background: #E26E67 !important;
 		border-radius: 2px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -1269,12 +1277,18 @@
 	#js-mount-point-discovery {
 		background: #FFF !important;
 		border: 1px solid #EBEBEB !important;
+		border-radius: 1px !important;
 		margin-top: 40px !important;
+		margin-left: -2px !important;
 	}
 
 	#js-mount-point-discovery .column-title {
 		margin-top: 20px !important;
 		margin-bottom: 20px !important;
+	}
+
+	._1Sc3960 {
+		padding: 16px 24px 22px 24px;
 	}
 
 	.gtm-discover-related-button {
@@ -1367,7 +1381,7 @@
 		background: #44B39D;
 		border-radius: 1.5px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		padding: 10px 15px !important;
@@ -1389,6 +1403,7 @@
 
 	.context .root .current {
 		background: #E6567A !important;
+		font-size: 11pt !important;
 		padding: 10px 40px 10px 15px !important;
 	}
 
@@ -1503,6 +1518,11 @@
 
 	.pixiv-button[value="Private"] {
 		border-right: 1px dotted #EBEBEB !important;
+		font-size: 12pt !important;
+	}
+
+	.pixiv-button[value="Remove"] {
+		font-size: 12pt !important;
 	}
 
 	/* MY BOOKMARKS */
@@ -1513,7 +1533,7 @@
 		/*** MY BOOKMARKS ILLUSTRATIONS CONTAINER ***/
 		margin-top: 45px !important;
 		margin-bottom: 10px !important;
-		margin-left: -2px !important;
+		margin-left: 0px !important;
 	}
 
 	._unit.bookmark-detail-unit {
@@ -1972,6 +1992,10 @@
 		background-color: #FFF !important;
 	}
 
+	.stacc_left_menu {
+		display: none !important;
+	}
+
 	.stacc_east_area .stacc_center_area {
 
 		/*** MY FEED MAIN CONTAINER LEFT COLUMN ***/
@@ -2255,7 +2279,7 @@
 
 	._user-profile-card .profile {
 		position: absolute !important;
-		left: 15px !important;
+		left: 11px !important;
 	}
 
 	._user-profile-card .profile ._user-icon {
@@ -2324,7 +2348,7 @@
 	._user-profile-card .message,
 	._user-profile-card ._premium-badge {
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		text-shadow: none !important;
@@ -2341,8 +2365,9 @@
 
 	._user-profile-card .message {
 		background-color: #2CC990 !important;
+		width: auto !important;
 		top: 76px !important;
-		left: 375px !important;
+		left: 370px !important;
 	}
 
 	._user-profile-card .message .icon {
@@ -2352,7 +2377,7 @@
 	._user-profile-card ._premium-badge {
 		background-color: #FCB941 !important;
 		top: 64px !important;
-		left: 500px !important;
+		left: 501px !important;
 	}
 
 	._user-profile-card ._premium-badge:before {
@@ -2431,7 +2456,7 @@
 		width: 60% !important;
 		position: absolute !important;
 		top: -85px !important;
-		left: 241px !important;
+		left: 237px !important;
 		z-index: 999 !important;
 	}
 
@@ -2455,7 +2480,7 @@
 
 	.column-header .tabs {
 		border: none !important;
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		padding: 1px 0px !important;
 	}
@@ -2483,17 +2508,18 @@
 	}
 
 	._unit.manage-unit .column-menu .menu-items:before {
-		background: no-repeat url("https://i.imgur.com/fkIEJ1T.png") center 65% !important;
-		background-size: 15pt auto !important;
+		background: no-repeat url("https://i.imgur.com/BVYe4t6.png") center !important;
+		background-size: 22pt auto !important;
 		color: transparent !important;
 		content: "dd" !important;
 		position: absolute;
 		margin-top: 9px !important;
 		margin-left: -14px !important;
+		filter: brigthness(0) invert(1) !important;
 	}
 
 	.column-menu .menu-items {
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		text-transform: capitalize !important;
 		margin-top: -5px !important;
@@ -2528,6 +2554,10 @@
 		/*** MEMBER ILLUSTRATION WORKS BOX MAIN TITLE ***/
 		font-stretch: condensed !important;
 		text-transform: uppercase;
+	}
+
+	.layout-a .layout-column-2 ._unit .column-title .self {
+		font-family: "Roboto", "KFhimaji" !important;
 	}
 
 	.layout-a .layout-column-2 ._unit .column-title + .count-badge {
@@ -2596,13 +2626,15 @@
 	.SN11CHZ {
 
 		/*** MEMBER ILLUSTRATION WORKS BOX PICTURES PAGE COUNTER ***/
-		background: #83D6DE !important;
+		background: #3D8EB9 !important;
 		border: none !important;
 		border-radius: 2px !important;
 		box-shadow: none !important;
+		font-weight: bold !important;
 		padding: 7px 10px 9px 10px !important;
 		margin-top: 10px !important;
 		margin-right: 10px !important;
+		opacity: .9;
 	}
 
 	._one-click-bookmark {
@@ -2648,6 +2680,13 @@
 
 	.column-order-menu .pager-container .page-list li.current {
 		padding: 4px 10px !important;
+	}
+
+	.column-order-menu .menu-items a {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+		text-transform: lowercase !important;
 	}
 
 	._pager-complex li {
@@ -2767,9 +2806,27 @@
 
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL TITLE ***/
 		border-bottom: 1px dotted #BEBEBE !important;
+		font-family: "Roboto", "KFhimaji" !important;
 		font-stretch: condensed !important;
 		padding-bottom: 10px !important;
 		margin-left: -1px !important;
+	}
+
+	.work-info .meta,
+	.user-reaction dd,
+	.user-reaction dt {
+		font-size: 11pt !important;
+	}
+
+	.work-info .meta > li + li {
+		border-left: none !important;
+		padding-left: 0px !important;
+	}
+
+	.work-info .meta > li + li::after {
+		content: " /" !important;
+		padding-left: 5px !important;
+		opacity: .5 !important;
 	}
 
 	.expand {
@@ -2778,14 +2835,21 @@
 		background: none !important;
 	}
 
-	.expand .button {
+	.expand .button,
+	.ui-expander-container .collapse .button {
 		background: #4CD4B0 !important;
 		border-radius: 1px !important;
 		color: #FFF !important;
+		font-size: 10pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
-		padding: 6px 15px 7px 15px !important;
+		padding: 10px 17px 11px 17px !important;
 		text-transform: uppercase;
+	}
+
+	.work-info .caption {
+		font-size: 11pt !important;
+		line-height: 25px;
 	}
 
 	._nice-button.js-nice-button {
@@ -2841,7 +2905,9 @@
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL TAGS CONTAINER TAG ***/
 		background: #FFF !important;
 		border: 1px solid #EBEBEB !important;
-		padding: 2px 10px !important;
+		font-size: 10pt !important;
+		font-stretch: condensed !important;
+		padding: 6px 14px !important;
 		margin-right: 5px !important;
 		margin-bottom: 5px !important;
 	}
@@ -2863,11 +2929,11 @@
 		border: none !important;
 		border-radius: 1px !important;
 		color: #FFF !important;
-		font-size: 9.5pt !important;
+		font-size: 10pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 18px !important;
-		padding: 3px 10px !important;
+		padding: 7px 14px !important;
 		text-transform: uppercase;
 	}
 
@@ -2884,7 +2950,7 @@
 		color: #FFF !important;
 		font-stretch: condensed !important;
 		padding-bottom: 1px !important;
-		line-height: 32px !important;
+		line-height: 30px !important;
 		text-transform: uppercase !important;
 		margin-left: 1px !important;
 	}
@@ -2892,6 +2958,7 @@
 	._bookmark-toggle-button.add-bookmark span,
 	._bookmark-toggle-button.bookmarked.edit-bookmark span {
 		color: #FFF !important;
+		font-size: 10pt !important;
 	}
 
 	._bookmark-toggle-button .bookmark-icon {
@@ -2904,17 +2971,17 @@
 	.bookmark-count._ui-tooltip {
 
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL BOOKMARK FAVORITE COUNTER ***/
-		background: #F6CD61 !important;
+		background: #F9AE74 !important;
 		border-radius: 1px !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 9.5pt !important;
+		font-size: 10pt !important;
 		font-stretch: condensed !important;
 		line-height: 30px !important;
 		height: 30px !important;
 		padding: 0px 15px 1px 15px !important;
 		position: absolute !important;
-		left: 140px !important;
+		left: 148px !important;
 	}
 
 	._icon.sprites-bookmark-badge {
@@ -2934,17 +3001,18 @@
 	#toggle-container #tog-btn {
 
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL TOGGLE CONTAINER TOG BUTTON ***/
-		background: #C0BA78 !important;
+		background: #60646D !important;
 		border: none !important;
 		border-radius: 1px !important;
 		box-shadow: none;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 9.5pt !important;
+		font-size: 10pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 7px 15px !important;
-		margin-top: -10px !important;
+		margin-top: -6px !important;
+		margin-right: 4px !important;
 	}
 
 	#download-container {
@@ -2962,7 +3030,7 @@
 		border-radius: 1px !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 9.5pt !important;
+		font-size: 10pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 7px 15px !important;
@@ -2983,7 +3051,7 @@
 		border-radius: 1px !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 9.5pt !important;
+		font-size: 10pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 7px 15px !important;
@@ -3137,8 +3205,8 @@
 	}
 
 	._2Jwpmcc {
-		width: 40px !important;
-		height: 40px !important;
+		width: 45px !important;
+		height: 45px !important;
 	}
 
 	._comment-form textarea {
@@ -3173,6 +3241,14 @@
 		margin-left: 10px !important;
 	}
 
+	._1cbTnsZ {
+		font-family: "Roboto", "KFhimaji" !important;
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+		margin-left: 2px !important;
+	}
+
 	._3Oz-lwO {
 		background: #FFF !important;
 		border: 1px solid #EBEBEB !important;
@@ -3181,6 +3257,23 @@
 		margin-top: 10px !important;
 		margin-left: 2px !important;
 		margin-bottom: 14px !important;
+	}
+
+	._5dJqs1i * {
+		font-size: 12pt !important;
+		line-height: 25px !important;
+	}
+
+	.z-7Uhbp {
+		font-size: 11pt !important;
+		font-stretch: condensed !important;
+		margin-left: 2px !important;
+	}
+
+	._1q8tmAX,
+	._8yltpOD {
+		font-size: 11pt !important;
+		font-stretch: condensed !important;
 	}
 
 	.user-name.ui-profile-popup {
@@ -3298,7 +3391,7 @@
 		/*** MEMBER BOOKMARKS TAGS BOX CATEGORIES ***/
 		display: inline !important;
 		margin-right: 20px !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 	}
 
 	.area_new.bookmark-tags #book_outlist li a {
@@ -3353,13 +3446,13 @@
 		border: 1px solid #EBEBEB !important;
 		padding: 10px 0px 10px 0px !important;
 		width: 60% !important;
-		margin-left: 241px !important;
+		margin-left: 237px !important;
 		z-index: 999 !important;
 	}
 
 	.extaraNavi p {
 		border-right: 1px dotted #EBEBEB !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		padding: 0px 15px !important;
 		margin-right: 0px !important;
@@ -3371,6 +3464,7 @@
 
 	.extaraNavi .extra_on a span {
 		color: #1D628B !important;
+		font-weight: normal !important;
 	}
 
 	.stacc_east_area.stacc_east_area_not_myself {
@@ -3381,7 +3475,7 @@
 		position: absolute !important;
 		top: 430px !important;
 		right: 0px !important;
-		left: 45px !important;
+		left: 38px !important;
 		margin: auto !important;
 	}
 
@@ -3673,7 +3767,7 @@
 	.settingProfile span {
 		background: transparent;
 		border: none !important;
-		font-size: 11pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
 		margin-right: -3px !important;
 	}
@@ -3683,6 +3777,7 @@
 	.settingProfile a.active,
 	.settingProfile span {
 		color: #00587A !important;
+		font-weight: normal !important;
 	}
 
 	.settingNavi p a::after,
@@ -3703,7 +3798,8 @@
 
 	.settingContent {
 		width: 100% !important;
-		margin-left: 20px !important;
+		margin-top: -20px !important;
+		margin-left: 22px !important;
 	}
 
 	.settingContent table {
@@ -3763,6 +3859,23 @@
 
 	#setting-notification > p {
 		display: none !important;
+	}
+
+	._1paQIu9._1m45-OS,
+	._94YU0fS.KZpqUua {
+		background-color: #EBEBEB !important;
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+		text-transform: lowercase !important;
+	}
+
+	._1paQIu9,
+	._94YU0fS {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+		text-transform: lowercase !important;
 	}
 
 	#page-setting-user .submit input,
@@ -3898,7 +4011,7 @@
 
 }
 
-@-moz-document url("https://www.pixiv.net/bookmark.php"),regexp("https://www.pixiv.net/bookmark.php\\?(rest|tag)=.*"),regexp("https://www.pixiv.net/bookmark.php\\?type=user&rest=.*"),regexp("https://www.pixiv.net/bookmark.php\\?type=reg_user.*"),regexp("https://www.pixiv.net/comment_all.php.*"),regexp("https://www.pixiv.net/bookmark_tag_all.php.*") {
+@-moz-document url("https://www.pixiv.net/bookmark.php"),regexp("https://www.pixiv.net/bookmark.php\\?(rest|tag)=.*"),regexp("https://www.pixiv.net/bookmark.php\\?type=user&rest=.*"),regexp("https://www.pixiv.net/bookmark.php\\?type=reg_user.*"),regexp("https://www.pixiv.net/comment_all.php.*"),regexp("https://www.pixiv.net/bookmark_tag_all.php.*"),regexp("https://www.pixiv.net/bookmark.php\\?untagged=.*"),regexp("https://www.pixiv.net/bookmark.php\\?type=illust_al.*l") {
 
 	/* MY BOOKMARKS/FOLLOWS/FOLLOWERS/COMMENTS */
 
@@ -4019,7 +4132,7 @@
 		text-shadow: none !important;
 		position: fixed !important;
 		right: 26px !important;
-		bottom: 160px !important;
+		bottom: 168px !important;
 		z-index: 9999 !important;
 	}
 
@@ -4232,7 +4345,7 @@ regexp("https://www.pixiv.net/group/search_group.php\\?.*") {
 
 	.column-label .tabs li {
 		border-right: none !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		margin-right: -10px !important;
 	}
 
