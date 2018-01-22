@@ -4355,6 +4355,7 @@ regexp("https://www.pixiv.net/group/search_group.php\\?.*") {
 
 	.column-label .tabs li a {
 		border: none !important;
+		font-size: 12pt !important;
 	}
 
 	.column-label .tabs li a::after {
