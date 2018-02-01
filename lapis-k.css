@@ -2843,7 +2843,7 @@
 	}
 
 	.work-info .caption {
-		font-size: 13pt !important;
+		font-size: 12pt !important;
 		line-height: 25px;
 	}
 
@@ -3204,12 +3204,34 @@
 
 	.comment.header.require-mail-authorization {
 		margin-top: -40px !important;
-		margin-left: -10px !important;
+		margin-left: -6px !important;
+	}
+
+	._comment-item .header::before,
+	._comment-item .header::after {
+		display: none !important;
 	}
 
 	._2Jwpmcc {
 		width: 45px !important;
 		height: 45px !important;
+	}
+
+	.ui-tab {
+		font-size: 14pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
+	}
+
+	._comment-form .tab-sticker::before,
+	._comment-form .tab-comment::before {
+		margin-top: 4px !important;
+	}
+
+	._comment-form .functions li {
+		font-size: 12pt !important;
+		font-stretch: condensed !important;
+		font-weight: normal !important;
 	}
 
 	._comment-form textarea {
@@ -3218,6 +3240,7 @@
 
 	.submit-button[value="Send"] {
 		border-radius: 1px !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		text-transform: uppercase;
 	}
@@ -4473,4 +4496,5 @@ regexp("https://www.pixiv.net/search.php.*") {
 	}
 
 }
+
 
