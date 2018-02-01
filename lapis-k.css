@@ -308,6 +308,10 @@
 		text-transform: lowercase;
 	}
 
+	.ui-search .container input {
+		font-size: 12pt !important;
+	}
+
 	.submit.sprites-search-old {
 
 		/*** HEADER INSIDE CONTAINER SEARCH BOX SUBMIT BUTTON ***/
@@ -565,7 +569,7 @@
 		/*** HOME EAST LAYOUT MAIN CONTAINER INFO BOX ***/
 		background: transparent !important;
 		border: none !important;
-		margin-top: -20px !important;
+		margin-top: 0px !important;
 		margin-left: -10px !important;
 	}
 
@@ -1344,7 +1348,7 @@
 	.tag-badge,
 	.count-badge {
 		border-radius: 1px !important;
-		font-size: 10.5pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		padding: 5px 8px;
 	}
@@ -2507,17 +2511,6 @@
 		margin-bottom: -6px !important;
 	}
 
-	._unit.manage-unit .column-menu .menu-items:before {
-		background: no-repeat url("https://i.imgur.com/BVYe4t6.png") center !important;
-		background-size: 22pt auto !important;
-		color: transparent !important;
-		content: "dd" !important;
-		position: absolute;
-		margin-top: 7px !important;
-		margin-left: -14px !important;
-		filter: brigthness(0) invert(1) !important;
-	}
-
 	.column-menu .menu-items {
 		font-size: 12pt !important;
 		font-stretch: condensed !important;
@@ -2530,7 +2523,7 @@
 		font-stretch: condensed !important;
 		text-transform: capitalize !important;
 		margin-top: -5px !important;
-		margin-left: 23px !important;
+		margin-left: -2px !important;
 	}
 
 	.column-menu .menu-items a:after {
@@ -2567,9 +2560,11 @@
 		border: 1px solid #282830 !important;
 		border-radius: 1px !important;
 		color: #FFF !important;
-		font-size: 10.5pt !important;
+		font-size: 12pt !important;
 		font-stretch: condensed !important;
+		font-weight: normal;
 		padding: 5px 8px 6px 8px !important;
+		text-transform: lowercase;
 	}
 
 	.layout-a .layout-column-2 ._image-items {
@@ -2848,7 +2843,7 @@
 	}
 
 	.work-info .caption {
-		font-size: 11pt !important;
+		font-size: 13pt !important;
 		line-height: 25px;
 	}
 
@@ -2865,6 +2860,7 @@
 
 	._nice-button.js-nice-button span {
 		color: #FFF !important;
+		font-size: 11pt !important;
 	}
 
 	._nice-button .smile-icon {
@@ -2905,7 +2901,7 @@
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL TAGS CONTAINER TAG ***/
 		background: #FFF !important;
 		border: 1px solid #EBEBEB !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		padding: 6px 14px !important;
 		margin-right: 5px !important;
@@ -2929,7 +2925,7 @@
 		border: none !important;
 		border-radius: 1px !important;
 		color: #FFF !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold !important;
 		line-height: 18px !important;
@@ -2958,7 +2954,7 @@
 	._bookmark-toggle-button.add-bookmark span,
 	._bookmark-toggle-button.bookmarked.edit-bookmark span {
 		color: #FFF !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 	}
 
 	._bookmark-toggle-button .bookmark-icon {
@@ -2966,6 +2962,7 @@
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL BOOKMARK BUTTON ICON ***/
 		background-position: center !important;
 		filter: brightness(0) invert(1) !important;
+		display: none;
 	}
 
 	.bookmark-count._ui-tooltip {
@@ -2975,19 +2972,21 @@
 		border-radius: 1px !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		line-height: 30px !important;
 		height: 30px !important;
 		padding: 0px 15px 1px 15px !important;
 		position: absolute !important;
-		left: 148px !important;
+		left: 158px !important;
+	}
+
+	.bookmark-count._ui-tooltip::after {
+		content: " BOOKMARK(S)";
 	}
 
 	._icon.sprites-bookmark-badge {
-		filter: brightness(0) invert(1) !important;
-		margin-right: 7px !important;
-		margin-bottom: 1px !important;
+		display: none;
 	}
 
 	#toggle-container {
@@ -3007,12 +3006,12 @@
 		box-shadow: none;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 7px 15px !important;
 		margin-top: -6px !important;
-		margin-right: 4px !important;
+		margin-right: 20px !important;
 	}
 
 	#download-container {
@@ -3030,7 +3029,7 @@
 		border-radius: 1px !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 7px 15px !important;
@@ -3040,7 +3039,7 @@
 
 		/*** MEMBER ILLUSTRATION MEDIUM DETAIL SEARCH CONTAINER ***/
 		position: absolute !important;
-		right: 20px !important;
+		right: 15px !important;
 		top: 15px !important;
 	}
 
@@ -3051,7 +3050,7 @@
 		border-radius: 1px !important;
 		color: #FFF !important;
 		font-family: "Roboto" !important;
-		font-size: 10pt !important;
+		font-size: 11pt !important;
 		font-stretch: condensed !important;
 		font-weight: bold;
 		padding: 7px 15px !important;
@@ -3192,11 +3191,15 @@
 		margin: 20px auto !important;
 	}
 
+	._work-detail-unit .other-links-container {
+		display: none;
+	}
+
 	._comment-form.ui-tab-container.root {
 
 		/*** MEMBER ILLUSTRATION MEDIUM COMMENTS CONTAINER YOUR COMMENT ***/
 		border-radius: 1px !important;
-		width: 100% !important;
+		width: 55vw !important;
 	}
 
 	.comment.header.require-mail-authorization {
@@ -4470,3 +4473,4 @@ regexp("https://www.pixiv.net/search.php.*") {
 	}
 
 }
+
