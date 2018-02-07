@@ -1694,7 +1694,7 @@
         background-size: 15px auto !important;
     }
 
-    .column-order-menu + .column-action-menu {
+    .column-action-menu {
 
         /*** MEMBER BOOKMARK RIGHT CONTENT ACTION FOOTER ***/
         background: #FFF !important;
@@ -1706,7 +1706,7 @@
         margin-bottom: 50px !important;
     }
 
-    .column-order-menu + .column-action-menu .menu-items {
+    .column-action-menu .menu-items {
         border-bottom: 1px solid #EBEBEB !important;
         font-size: 12pt !important;
         padding-bottom: 20px !important;
@@ -1715,11 +1715,11 @@
         margin-left: -10px !important;
     }
 
-    .column-order-menu + .column-action-menu .buttons {
+    .column-action-menu .buttons {
         margin-top: 10px !important;
     }
 
-    .column-order-menu + .column-action-menu .buttons #add_tag {
+    .column-action-menu .buttons #add_tag {
         background: #F0F1F5 !important;
         border: none !important;
         border-radius: 2px !important;
@@ -1729,7 +1729,7 @@
         margin-right: 10px !important;
     }
 
-    .column-order-menu + .column-action-menu .buttons ._button {
+    .column-action-menu .buttons ._button {
         background: #EFF2FF !important;
         border: none !important;
         border-radius: 2px !important;
@@ -1744,10 +1744,27 @@
         border-radius: 2px !important;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
         color: #7E7E7E;
-        font-size: 12pt !important;
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
         font-weight: normal !important;
         padding: 11px !important;
         margin-top: 10px !important;
+    }
+
+    .column-options {
+        margin-top: 75px !important;
+        right: 0px !important;
+    }
+
+    #edit-tag {
+        background: #F0F1F5 !important;
+        border: none;
+        border-radius: 2px !important;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
+        font-size: 16pt !important;
+        font-stretch: condensed !important;
+        padding: 7px 8px 7px 8px !important;
+        text-transform: lowercase !important;
     }
 
     /* MEMBER FEED */
@@ -3555,4 +3572,3 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
     }
 
 }
-
