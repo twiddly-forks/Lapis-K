@@ -3440,6 +3440,12 @@ regexp("https://www.pixiv.net/novel/tags.php.*") {
     .sibling-items .after a::after {
         display: none;
     }
+    
+    .ranking-items.adjust {
+        margin-top: 50px !important;
+        margin-left: 0px !important;
+        text-align: center !important;
+    }
 
 }
 
