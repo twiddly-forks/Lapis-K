@@ -1,8 +1,6 @@
 # Lapis-K
 
-![screenshot](https://s1.gifyu.com/images/Screenshot-1308.png)
-
-![screenshot](https://s1.gifyu.com/images/Screenshot-1309.png)
+<img src="preview_lapis-k.png" width="100%">
 
 Preview of <i>Lapis-K</i>.
 
