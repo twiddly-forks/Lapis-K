@@ -109,7 +109,9 @@
     ._booth-promotion-container,
     .comic-hot-works,
     .content._mypage-fanbox,
+	.followbooster-after-bookmark-caption,
     .footer,
+	._icon._bookmark-icon-inline,
     .icon-pixpedia,
     .icon-pixpedia-no-item,
     ._icon.sprites-checked,
@@ -120,7 +122,7 @@
     ._layout-order-bookmark-wrapper,
     ._member-illust-medium-fanbox-area,
     ._member-page-fanbox-area,
-	._member-page-frequent-uploaded-work-tags-container,
+    ._member-page-frequent-uploaded-work-tags-container,
     ._mute-edit-container .premium-banner,
     ._official-badge,
     .onecolumnBottom,
@@ -168,6 +170,14 @@
     ._no-item {
         background: transparent;
         font-size: 15pt !important;
+    }
+
+    ._one-click-bookmark.new {
+        background-image: url("https://i.imgur.com/63p1cf8.png");
+    }
+
+    ._one-click-bookmark.on.new {
+        background-image: url("https://i.imgur.com/wu2OcFV.pngg");
     }
 
     /* HEADER */
@@ -945,7 +955,7 @@
 
     #page-bookmark-user-myself .root {
         border: none !important;
-    	font-size: 14pt !important;
+        font-size: 14pt !important;
         font-stretch: condensed !important;
     }
 
@@ -1189,6 +1199,30 @@
         white-space: nowrap !important;
     }
 
+    .followbooster-after-bookmark.user-recommendation-items,
+	.followbooster-after-bookmark.user-recommendation-items .user-recommendation-item {
+        border: none !important;
+    }
+
+    .followbooster-after-bookmark.user-recommendation-items .title.js-click-trackable {
+        font-size: 17pt !important;
+        font-stretch: condensed !important;
+    }
+
+    .followbooster-after-bookmark.user-recommendation-items .meta.inline-list {
+        font-size: 14pt !important;
+        font-stretch: condensed !important;
+    }
+
+    ._follow-button-container.js-click-trackable .follow-button {
+        border-radius: 2px !important;
+        font-size: 12pt !important;
+        font-stretch: condensed !important;
+        font-weight: bold !important;
+        width: 90px !important;
+        text-transform: uppercase !important;
+    }
+
     /* DISCOVERY */
 
     /** DESCRIPTION : change the elements of the discovery page **/
@@ -1299,7 +1333,7 @@
         line-height: 16pt !important;
     }
 
-    #js-mount-point-discovery .follow-button.js-follow-button.off.js-click-trackable {
+    #js-mount-point-discovery .follow-button.js-follow-button.off.js-click-trackable{
         border-radius: 2px;
         box-shadow: 0px 1px 2px rgba(0, 0, 0, .1) !important;
         padding-top: 3px !important;
@@ -1834,6 +1868,7 @@
 
         /*** MEMBER FEED RIGHT CONTENT POST ***/
         font-size: 15pt !important;
+        font-stretch: condensed !important;
         opacity: .8 !important;
     }
 
@@ -2181,7 +2216,7 @@
         /*** MEMBER ILLUSTRATION RIGHT CONTENT SIBLINGS NAVIGATION BAR ***/
         display: none;
     }
-    
+
     .layout-a .layout-column-2 .work-info .meta li {
         border: none !important;
         font-size: 12pt !important;
@@ -3006,7 +3041,7 @@
 }
 
 @-moz-document url("https://www.pixiv.net/bookmark.php"), regexp("https://www.pixiv.net/bookmark.php*\\?rest=.*"), regexp("https://www.pixiv.net/stacc/my/home/.*"), regexp("https://www.pixiv.net/stacc\\?mode=.*") {
-	#wrapper .layout-a {
+#wrapper .layout-a {
         margin-top: -30px !important;
     }
 
@@ -3018,7 +3053,6 @@
     ._unit.list-unit.mypixiv-unit {
         top: 27px !important;
     }
-
 }
 
 @-moz-document regexp("https://www.pixiv.net/bookmark_detail.php\\?.*") {
